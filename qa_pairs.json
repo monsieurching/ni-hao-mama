@@ -1,0 +1,1334 @@
+[
+  {
+    "question": "Yay! Okay, so I'm going to start with just some questions that I wrote down. I've got a number of questions and we'll just try to get through some of them this morning. Is that okay?",
+    "answer_text": "Okay, okay. Okay, so I'm going to start with questions from way back. So questions from when you were younger that take you back to your very early days to start out with. Okay.",
+    "answer_start": 37.46,
+    "answer_end": 52.1,
+    "start_fmt": "00:37",
+    "label": "Interview introduction and consent",
+    "mama_segments": [
+      {
+        "start": 37.46,
+        "end": 51.82000000000001
+      }
+    ],
+    "visitor_question": "Can you share a little about yourself to get us started?"
+  },
+  {
+    "question": "Why were you born in Shanghai? I thought you were always born in Guangzhou.",
+    "answer_text": "No. I think maybe my dad was there, so I was born in Shanghai. I'm the one who was born when they had... I'm the one who has the money.",
+    "answer_start": 75.03999999999999,
+    "answer_end": 83.86,
+    "start_fmt": "01:15",
+    "label": "Birthplace: Shanghai vs Guangzhou",
+    "mama_segments": [
+      {
+        "start": 75.03999999999999,
+        "end": 83.86
+      }
+    ],
+    "visitor_question": "Where were you born?"
+  },
+  {
+    "question": "What's the Chinese day?",
+    "answer_text": "1947, February 29. And they had two February at that year. So it's called Yunyi Yu. That is every four years you can have one of those days. Yeah, it's a leap year day. Yeah.",
+    "answer_start": 101.80000000000001,
+    "answer_end": 123.54,
+    "start_fmt": "01:41",
+    "label": "Asking about Chinese birth date",
+    "mama_segments": [
+      {
+        "start": 101.80000000000001,
+        "end": 123.0
+      }
+    ],
+    "visitor_question": "When is your birthday?"
+  },
+  {
+    "question": "On the Chinese calendar?",
+    "answer_text": "Yes. Oh, interesting. Interesting, interesting. Interesting. Okay. Do you... Um... Uh... Let me ask you another easy question.",
+    "answer_start": 129.62,
+    "answer_end": 144.68,
+    "start_fmt": "02:09",
+    "label": "Chinese lunar calendar date",
+    "mama_segments": [
+      {
+        "start": 130.66,
+        "end": 133.62
+      },
+      {
+        "start": 139.78,
+        "end": 140.44
+      },
+      {
+        "start": 142.44,
+        "end": 144.68
+      }
+    ],
+    "visitor_question": "Did your birthday ever cause any confusion?"
+  },
+  {
+    "question": "Jing that is quiet, yeah?",
+    "answer_text": "Hua is China. So I don't know. That's what it...",
+    "answer_start": 157.56,
+    "answer_end": 162.6,
+    "start_fmt": "02:37",
+    "label": "Meaning of name character Jing",
+    "mama_segments": [
+      {
+        "start": 157.56,
+        "end": 162.6
+      }
+    ],
+    "visitor_question": "What does your name mean?"
+  },
+  {
+    "question": "Hua Jing Hua?",
+    "answer_text": "Wang. Wang. Wang is my last name. Jing is quiet. Okay. Jing. Hua is China. Quiet China. Quiet China. That means China will be very peaceful, maybe. Quiet China.",
+    "answer_start": 164.4,
+    "answer_end": 184.9,
+    "start_fmt": "02:44",
+    "label": "Full Chinese name clarification",
+    "mama_segments": [
+      {
+        "start": 165.72,
+        "end": 170.16
+      },
+      {
+        "start": 172.44,
+        "end": 173.76
+      },
+      {
+        "start": 175.76,
+        "end": 181.54
+      },
+      {
+        "start": 183.84,
+        "end": 184.9
+      }
+    ],
+    "visitor_question": "What is the meaning behind your full name?"
+  },
+  {
+    "question": "Awu?",
+    "answer_text": "Awu. Awu is our language. Ah Hua. Uh... Yeah.",
+    "answer_start": 191.28,
+    "answer_end": 199.82,
+    "start_fmt": "03:11",
+    "label": "Nickname Awu clarification",
+    "mama_segments": [
+      {
+        "start": 191.76,
+        "end": 194.26
+      },
+      {
+        "start": 201.16,
+        "end": 201.76
+      }
+    ],
+    "visitor_question": "What did your family call you as a child?"
+  },
+  {
+    "question": "What does the ah mean?",
+    "answer_text": "Ah, just... Ah, name starting with. Awu, ah... Something like that. Chinese always trying to do like that.",
+    "answer_start": 201.16,
+    "answer_end": 210.78,
+    "start_fmt": "03:21",
+    "label": "Meaning of 'Ah' prefix in nickname",
+    "mama_segments": [
+      {
+        "start": 201.16,
+        "end": 210.78
+      }
+    ],
+    "visitor_question": "How did your nickname come about?"
+  },
+  {
+    "question": "That's what Auntie Susan calls you, right?",
+    "answer_text": "Yeah, Awu. She's the only one who calls you that. Awu, yeah. That's what before my mom and dad called me. Awu. Oh, interesting.",
+    "answer_start": 212.94,
+    "answer_end": 220.86,
+    "start_fmt": "03:32",
+    "label": "Who uses the nickname Awu",
+    "mama_segments": [
+      {
+        "start": 212.94,
+        "end": 220.86
+      }
+    ],
+    "visitor_question": "Who gave you that nickname?"
+  },
+  {
+    "question": "So is Auntie Susan the only person who calls you that now?",
+    "answer_text": "Yeah. Because my other sibling called me Ikaje. Ikaje. Ah, because you're older. Sister, yeah. Ikaje. That's how Chinese, they do it, you know, have to call, not call the name. Yeah. Interesting.",
+    "answer_start": 224.66,
+    "answer_end": 241.7,
+    "start_fmt": "03:44",
+    "label": "Only person still using that nickname",
+    "mama_segments": [
+      {
+        "start": 225.44,
+        "end": 241.7
+      }
+    ],
+    "visitor_question": "How did your siblings address you?"
+  },
+  {
+    "question": "What else do you remember about growing up in Wenzhou?",
+    "answer_text": "I don't remember growing up in Wenzhou because I was so young. Just couple years. When I was four, five years old, I moved to Hong Kong. That was in 1952.",
+    "answer_start": 247.22,
+    "answer_end": 258.88,
+    "start_fmt": "04:07",
+    "label": "Memories of growing up in Wenzhou",
+    "mama_segments": [
+      {
+        "start": 247.22,
+        "end": 258.88
+      }
+    ],
+    "visitor_question": "Where did you grow up?"
+  },
+  {
+    "question": "What do you remember about? About?",
+    "answer_text": "Your early days in Hong Kong. I remember when my younger brother and sister was born. I'm the one who take care of them. I, at that time, my mom is not really healthy. So I have to take them outside so my mom can get a nap. So I have Johnny on my back. And Nancy, I hold her. And Nancy, I hold her hand. So at that time, we don't have too much thing to play. We go to Iran to go in a, randomly, the truck. We go around there and play. So at my young age, my back is a little bit curved. Even when I grow up because I was doing that when I, my young age. And there's certain time. I go to. I go to my auntie. Young Lou Dosa in New York, the one, that lady. At that time, she don't have any children. So I remember a certain time, I go to sleep at her place. With, you know.",
+    "answer_start": 262.44,
+    "answer_end": 342.32,
+    "start_fmt": "04:22",
+    "label": "Asking to elaborate on a memory",
+    "mama_segments": [
+      {
+        "start": 262.44,
+        "end": 271.58
+      },
+      {
+        "start": 273.3,
+        "end": 342.32
+      }
+    ],
+    "visitor_question": "What do you remember about caring for your younger siblings?",
+    "featured": true
+  },
+  {
+    "question": "Just with the three of them? With the two of them?",
+    "answer_text": "I guess so. Yeah, I'm not too sure. I don't remember too well. But I just remember I sleep at her place. My family. Lao Hauser.",
+    "answer_start": 344.32,
+    "answer_end": 350.32,
+    "start_fmt": "05:44",
+    "label": "Number of family members living together",
+    "mama_segments": [
+      {
+        "start": 344.32,
+        "end": 352.32
+      }
+    ],
+    "visitor_question": "Who looked after you when you were little?"
+  },
+  {
+    "question": "Wait, where in Hong Kong did you live back then?",
+    "answer_text": "I think at that time in Kowloon City. Okay. Yeah. And then I moved to Wong Po Gai. You know Wong Po Gai.",
+    "answer_start": 361.32,
+    "answer_end": 376.32,
+    "start_fmt": "06:01",
+    "label": "Location of Hong Kong residence",
+    "mama_segments": [
+      {
+        "start": 361.32,
+        "end": 367.32
+      },
+      {
+        "start": 369.32,
+        "end": 376.32
+      }
+    ],
+    "visitor_question": "Which neighborhoods did you live in growing up?"
+  },
+  {
+    "question": "Where is Wong Po Gai?",
+    "answer_text": "It's in Hong Ham. Hung Ham. Hung Ham. And then I, we moved to, what, a property belong to the, not really government, you know, city and county, whatever it is, not private property. Before we share one small flat. We have so many units there. And then we live in one of the unit. And we sleep in a bed. Because not enough to hold that many people. So we have to do that way. And then we put a bed, a bed on the other side when we go to sleep. So our feet can hold on that. But we just sleep the other way. So you slept horizontally. Yeah.",
+    "answer_start": 377.32,
+    "answer_end": 432.32,
+    "start_fmt": "06:17",
+    "label": "Where is Wong Po Gai neighborhood",
+    "mama_segments": [
+      {
+        "start": 377.32,
+        "end": 431.32
+      },
+      {
+        "start": 433.32,
+        "end": 434.32
+      }
+    ],
+    "visitor_question": "What were your homes like growing up?",
+    "featured": true
+  },
+  {
+    "question": "How many of you?",
+    "answer_text": "I think, oh, so many of us. Yeah. Yeah. Yeah.",
+    "answer_start": 433.32,
+    "answer_end": 437.32,
+    "start_fmt": "07:13",
+    "label": "How many people in the household",
+    "mama_segments": [
+      {
+        "start": 433.32,
+        "end": 434.32
+      }
+    ],
+    "visitor_question": "How many people lived together in your home?"
+  },
+  {
+    "question": "For how long?",
+    "answer_text": "Maybe couple years. I don't remember. Yeah. Because, and then they only have one toilet. Sometimes we cannot hold it. We go to the kitchen. The kitchen is concrete. So they just .",
+    "answer_start": 444.32,
+    "answer_end": 452.32,
+    "start_fmt": "07:24",
+    "label": "How long living in that place",
+    "mama_segments": [
+      {
+        "start": 444.32,
+        "end": 452.32
+      }
+    ],
+    "visitor_question": "What was it like sharing one toilet with so many people?"
+  },
+  {
+    "question": "So you just peed in the kitchen?",
+    "answer_text": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah! That's a practice. Yeah. Interesting. Interesting.",
+    "answer_start": 453.32,
+    "answer_end": 471.32,
+    "start_fmt": "07:33",
+    "label": "Bathroom facilities in the home",
+    "mama_segments": [
+      {
+        "start": 467.32,
+        "end": 471.32
+      }
+    ],
+    "visitor_question": "Did the whole family share one room?"
+  },
+  {
+    "question": "What did you, did you know what you wanted to be when you grew up back then? Or did you even think about that?",
+    "answer_text": "That's like the . At that age, we didn't think about it. But then when we go to school they say, what you want to be. Then I say nurse. Because that's something that we can, for some reason, if we are in cubist, that's more comfortable. And they want to learn more teachers now.",
+    "answer_start": 476.64,
+    "answer_end": 491.6,
+    "start_fmt": "07:56",
+    "label": "Career aspirations as a child",
+    "mama_segments": [
+      {
+        "start": 476.64,
+        "end": 491.6
+      }
+    ],
+    "visitor_question": "What did you dream of becoming when you grew up?"
+  },
+  {
+    "question": "Interesting. Were you close, I guess you were close to your brothers and sisters?",
+    "answer_text": "I guess so. I am the one who took my younger brother and sister going to schools. I mean, I helped my brother go to the government school, and I took my sister when she graduated from elementary, not elementary, yeah, I think so. And she promoted one level up, and I took her to register to the school. Not my elder sister. My elder sister is five years older, but I'm the one.",
+    "answer_start": 505.26000000000005,
+    "answer_end": 546.76,
+    "start_fmt": "08:25",
+    "label": "Closeness with siblings growing up",
+    "mama_segments": [
+      {
+        "start": 505.26000000000005,
+        "end": 546.76
+      }
+    ],
+    "visitor_question": "Were you a responsible older sister?",
+    "featured": true
+  },
+  {
+    "question": "And then where was your, you said your mom was the one who took care of you? My mom was sick the whole time?",
+    "answer_text": "No, not the whole time, but I don't know. My mom, she, she don't really, I mean, we have to work at home, yeah. We have to go to market to buy food once in a while, yeah. And then we have to clean the floor every day, maybe one choice. So that's our job that we have to do. Yeah. But other than that, I don't know. Yeah. Yeah.",
+    "answer_start": 556.5,
+    "answer_end": 585.38,
+    "start_fmt": "09:16",
+    "label": "Mother's role as caregiver and health",
+    "mama_segments": [
+      {
+        "start": 556.5,
+        "end": 583.38
+      },
+      {
+        "start": 586.38,
+        "end": 587.38
+      }
+    ],
+    "visitor_question": "Did your mom have time to spend with you kids?"
+  },
+  {
+    "question": "He said he was a chef? Was he a chef?",
+    "answer_text": "No. No. Chief steward.",
+    "answer_start": 588.38,
+    "answer_end": 591.38,
+    "start_fmt": "09:48",
+    "label": "Father's occupation as chef",
+    "mama_segments": [
+      {
+        "start": 590.38,
+        "end": 591.38
+      }
+    ],
+    "visitor_question": "What did your father do for work?"
+  },
+  {
+    "question": "Chief steward on what kind of boat?",
+    "answer_text": "It was a large boat called, we still have that boat here right now. It is, it's a boat that was used to carry the boat. Oh, it was a boat that was used to carry the boat. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. It's a boat that was used to carry the boat, so that's where we arrived. And then it was changed to a bigger boat. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.",
+    "answer_start": 592.38,
+    "answer_end": 626.38,
+    "start_fmt": "09:52",
+    "label": "Father's role as chief steward on ship",
+    "mama_segments": [
+      {
+        "start": 592.38,
+        "end": 599.38
+      },
+      {
+        "start": 617.38,
+        "end": 620.38
+      }
+    ],
+    "visitor_question": "What kind of ship did your father work on?",
+    "featured": true
+  },
+  {
+    "question": "And it was the club house of the first ship?",
+    "answer_text": "Yeah. Yeah. It was a big boat, the first year. Yeah. Yeah. Yeah. So it was the boat that is, it was a big ship at that time. Yeah. Yeah.",
+    "answer_start": 627.38,
+    "answer_end": 636.38,
+    "start_fmt": "10:27",
+    "label": "Type of ship father worked on",
+    "mama_segments": [
+      {
+        "start": 629.38,
+        "end": 630.38
+      },
+      {
+        "start": 633.38,
+        "end": 634.38
+      }
+    ],
+    "visitor_question": "Was it a big ship?"
+  },
+  {
+    "question": "So it was a cruise, cruise boat?",
+    "answer_text": "Yeah. Yeah. So I don't know whether it was, it's not normally for, not cruise, it is for cargo. Cargo boat. I forget the name.",
+    "answer_start": 637.38,
+    "answer_end": 642.38,
+    "start_fmt": "10:37",
+    "label": "Was it a cruise ship",
+    "mama_segments": [
+      {
+        "start": 639.38,
+        "end": 644.38
+      }
+    ],
+    "visitor_question": "Was it a passenger or cargo ship?"
+  },
+  {
+    "question": "Oh, so you took care of them to go to school while you didn't go to school?",
+    "answer_text": "No, no, no. I, I mean because I have to take care of my younger brother and sisters. And my brother below me, because he is not a boy, he's a young boy. So he had to go to school. And my elder sister, she's older, so she go to school. So I'm the one who stay back to take care of my brother and sister.",
+    "answer_start": 691.38,
+    "answer_end": 712.38,
+    "start_fmt": "11:31",
+    "label": "Sacrificing school to care for siblings",
+    "mama_segments": [
+      {
+        "start": 691.38,
+        "end": 712.38
+      }
+    ],
+    "visitor_question": "Why didn't you finish school earlier?"
+  },
+  {
+    "question": "What did you learn in school?",
+    "answer_text": "I don't know what I learned. I don't remember what I learned in school. But I remember the school that I go.",
+    "answer_start": 728.38,
+    "answer_end": 736.38,
+    "start_fmt": "12:08",
+    "label": "Subjects studied in school",
+    "mama_segments": [
+      {
+        "start": 728.38,
+        "end": 736.38
+      }
+    ],
+    "visitor_question": "What do you remember about your early schooling?"
+  },
+  {
+    "question": "And I remember one of the school that I go, it's just like a flat, you know, a flat, yeah?",
+    "answer_text": "And then we are on a level, maybe fourth floor, something like that. So not a big school. A big school like what we have nowadays, no. It's just one of the flat. Yeah. Yeah.",
+    "answer_start": 753.38,
+    "answer_end": 767.38,
+    "start_fmt": "12:33",
+    "label": "Description of school as a flat",
+    "mama_segments": [
+      {
+        "start": 753.38,
+        "end": 765.38
+      }
+    ],
+    "visitor_question": "What was your school building like?"
+  },
+  {
+    "question": "And what did you, what was your favorite thing to learn?",
+    "answer_text": "I don't know what. You didn't have anything you learned. Yeah. But then I go to a bigger school, Morlow English School in Kuntong. That's on the Kowloon side, so. Yeah, Kuntong, Kowloon side. And I remember my sister say, Oh, you go to that school. I was in primary six. And she said, you have to repeat that level. So I repeat that level at the school. So I start at Morlow Chinese School when I grade six.",
+    "answer_start": 771.38,
+    "answer_end": 807.38,
+    "start_fmt": "12:51",
+    "label": "Favorite subject in school",
+    "mama_segments": [
+      {
+        "start": 771.38,
+        "end": 807.38
+      }
+    ],
+    "visitor_question": "What was the bigger school you attended like?"
+  },
+  {
+    "question": "Why?",
+    "answer_text": "I don't know. She didn't think you were smart enough. Yeah, maybe.",
+    "answer_start": 813.38,
+    "answer_end": 818.38,
+    "start_fmt": "13:33",
+    "label": "Reason for favorite subject",
+    "mama_segments": [
+      {
+        "start": 813.38,
+        "end": 818.38
+      }
+    ],
+    "visitor_question": "Why did your mother pull you from that school?"
+  },
+  {
+    "question": "That was your high school too?",
+    "answer_text": "Yeah. Until I graduate. Oh, nice. Yeah. Okay, so then you graduated.",
+    "answer_start": 827.38,
+    "answer_end": 833.38,
+    "start_fmt": "13:47",
+    "label": "Same school for high school",
+    "mama_segments": [
+      {
+        "start": 828.38,
+        "end": 833.38
+      }
+    ],
+    "visitor_question": "Did you finish at that school?"
+  },
+  {
+    "question": "What did you, what did you fail?",
+    "answer_text": "I forget. But anyway, I didn't have enough credit. I didn't have enough credit, I think.",
+    "answer_start": 842.38,
+    "answer_end": 849.38,
+    "start_fmt": "14:02",
+    "label": "Subject failed in school",
+    "mama_segments": [
+      {
+        "start": 842.38,
+        "end": 849.38
+      }
+    ],
+    "visitor_question": "Did you have enough credits to graduate?"
+  },
+  {
+    "question": "What did you fail?",
+    "answer_text": "Maybe English. I don't know. That makes sense.",
+    "answer_start": 864.38,
+    "answer_end": 872.38,
+    "start_fmt": "14:24",
+    "label": "Clarifying what subject was failed",
+    "mama_segments": [
+      {
+        "start": 864.38,
+        "end": 866.38
+      },
+      {
+        "start": 869.38,
+        "end": 872.38
+      }
+    ],
+    "visitor_question": "What was your strongest subject?"
+  },
+  {
+    "question": "What did you work?",
+    "answer_text": "I worked, I think, let me think. I forget where I worked first. Oh, yeah. I worked at a stock company, I think. My first job.",
+    "answer_start": 880.38,
+    "answer_end": 900.38,
+    "start_fmt": "14:40",
+    "label": "Type of work after school",
+    "mama_segments": [
+      {
+        "start": 880.38,
+        "end": 900.38
+      }
+    ],
+    "visitor_question": "What was your very first job?"
+  },
+  {
+    "question": "How did, what did you do for them?",
+    "answer_text": "I'm a secretary. But my salary only, I don't know. I think, $320 Hong Kong.",
+    "answer_start": 903.38,
+    "answer_end": 910.38,
+    "start_fmt": "15:03",
+    "label": "Job duties at work",
+    "mama_segments": [
+      {
+        "start": 903.38,
+        "end": 910.38
+      }
+    ],
+    "visitor_question": "What was your role at your first job?"
+  },
+  {
+    "question": "His family has lots of things, yeah?",
+    "answer_text": "And I know a lot of those rich people come to Creewood Company to buy stocks. They are very famous kind people. Dong Ho Wang. You know, Dong Ho Wang. He's a boat ship man. Dong is a very famous name, but he's one of those guys. And one of the toy guys, now still very famous, I think. They would invest in the stockbroker. They come and buy the stock for our company. I'm just secretary for my boss.",
+    "answer_start": 929.38,
+    "answer_end": 966.72,
+    "start_fmt": "15:29",
+    "label": "Employer's family wealth",
+    "mama_segments": [
+      {
+        "start": 929.38,
+        "end": 966.72
+      }
+    ],
+    "visitor_question": "Did you meet anyone interesting at that job?"
+  },
+  {
+    "question": "You worked at a garment factory?",
+    "answer_text": "Garment factory as a secretary, too. Oh, as a secretary. Yeah. Not as a seller. No. And then I worked at a construction company, also as secretary.",
+    "answer_start": 1003.78,
+    "answer_end": 1017.78,
+    "start_fmt": "16:43",
+    "label": "Working at a garment factory",
+    "mama_segments": [
+      {
+        "start": 1003.78,
+        "end": 1019.72
+      }
+    ],
+    "visitor_question": "What other jobs did you have after that?"
+  },
+  {
+    "question": "How come you have so many days off?",
+    "answer_text": "I don't know. I work at a construction company. You have so many different jobs as a secretary. I don't know. It's cheap.",
+    "answer_start": 1018.72,
+    "answer_end": 1026.72,
+    "start_fmt": "16:58",
+    "label": "Reason for many days off",
+    "mama_segments": [
+      {
+        "start": 1018.72,
+        "end": 1026.72
+      }
+    ],
+    "visitor_question": "Why did you move between so many jobs?"
+  },
+  {
+    "question": "Was it hot in the factory? Was it nice in the factory?",
+    "answer_text": "It's okay. It's not too good. Okay, so you did garment factory. You worked at a garment factory. Yeah.",
+    "answer_start": 1043.72,
+    "answer_end": 1049.72,
+    "start_fmt": "17:23",
+    "label": "Working conditions in the factory",
+    "mama_segments": [
+      {
+        "start": 1043.72,
+        "end": 1048.72
+      }
+    ],
+    "visitor_question": "How was working life treating you?"
+  },
+  {
+    "question": "Do you know if they still exist, Holsten?",
+    "answer_text": "Holsten beer, yeah. H-O-L-S-T-E-L. H-O-L-L. H-O-L-S-T-E-L. S-T-E-L. And then they have two, we have two bosses, yeah. Yeah. And the main boss, he's not always in Hong Kong, I think. And then the other boss take care. He is a professor at Hong Kong University or Chinese University, I don't remember. Yeah. Yeah. He's called Sun Lee Wong. I remember his name. Yeah.",
+    "answer_start": 1093.72,
+    "answer_end": 1131.72,
+    "start_fmt": "18:13",
+    "label": "Whether Holsten factory still exists",
+    "mama_segments": [
+      {
+        "start": 1093.72,
+        "end": 1131.72
+      }
+    ],
+    "visitor_question": "Which company did you work for after the garment factory?"
+  },
+  {
+    "question": "So you just, do you have a lot of pictures of?",
+    "answer_text": "At that time, we don't really take pictures. Interesting. Yeah. And I do part-time job too. I, tutoring young people. So afterward, I go to their home, tutoring them.",
+    "answer_start": 1135.72,
+    "answer_end": 1153.72,
+    "start_fmt": "18:55",
+    "label": "Having photos from that period",
+    "mama_segments": [
+      {
+        "start": 1135.72,
+        "end": 1153.72
+      }
+    ],
+    "visitor_question": "Do you have any photos from your working days?"
+  },
+  {
+    "question": "In what?",
+    "answer_text": "All subjects. Just trying to let them study harder. I've been going up to a private school. Oh, okay. Yeah. I don't remember much, but I go to an Irish colic school wearing this turquoise t-shirt, utilise the tra Himself. rey siguiente.",
+    "answer_start": 1154.72,
+    "answer_end": 1190.72,
+    "start_fmt": "19:14",
+    "label": "Clarifying what photos are in",
+    "mama_segments": [
+      {
+        "start": 1154.72,
+        "end": 1190.72
+      }
+    ],
+    "visitor_question": "What did you tutor students in?"
+  },
+  {
+    "question": "When you were working, were you still living with your family?",
+    "answer_text": "Of course. I give all my money to my parents. I don't even keep things. And during other times, we embroider, you know, we chun kao fa, you know, chun kao fa, and then embroider it. So extra money.",
+    "answer_start": 1207.96,
+    "answer_end": 1225.5800000000002,
+    "start_fmt": "20:07",
+    "label": "Living with family while working",
+    "mama_segments": [
+      {
+        "start": 1207.96,
+        "end": 1225.5800000000002
+      }
+    ],
+    "visitor_question": "Did you keep any of the money you earned?"
+  },
+  {
+    "question": "So do you still know how to sew?",
+    "answer_text": "Yeah. There's certain time I go to study sewing. So when I was young, my leisure time is I stay home and sew clothes. So I make one kippo for my mom, and I make some of my clothes.",
+    "answer_start": 1245.18,
+    "answer_end": 1266.8600000000001,
+    "start_fmt": "20:45",
+    "label": "Whether she still knows how to sew",
+    "mama_segments": [
+      {
+        "start": 1245.18,
+        "end": 1266.8600000000001
+      }
+    ],
+    "visitor_question": "What did you do for fun in your spare time?"
+  },
+  {
+    "question": "So all of you guys are still living together in the one room?",
+    "answer_text": "No, no. Later on, we moved to the government kind of complex. Kei diyo fang ok hit wui. Fang ok, that means house. House. House. We moved to that. That was in Hongham. Tsai Kung Lee, number 33, I remember. And that time we have a—we have two—they gave you a room, and then my dad make it into two rooms. OK. And then—but you can hear the next room, because they had—it's not solid wood kind of. And then we had bunk beds.",
+    "answer_start": 1293.42,
+    "answer_end": 1335.3,
+    "start_fmt": "21:33",
+    "label": "Whole family still in one room",
+    "mama_segments": [
+      {
+        "start": 1293.42,
+        "end": 1302.42
+      },
+      {
+        "start": 1304.42,
+        "end": 1335.3
+      }
+    ],
+    "visitor_question": "What were your living arrangements like later on?"
+  },
+  {
+    "question": "So you had a bunk bed?",
+    "answer_text": "Yeah, we had bunk beds, but two of us had to stay in one bed, like that kind. Interesting. Because there was four of you at home, I guess, at that point. Or there was five of you. Yeah, something like that. But anyway.",
+    "answer_start": 1337.3,
+    "answer_end": 1356.3,
+    "start_fmt": "22:17",
+    "label": "Having a bunk bed setup",
+    "mama_segments": [
+      {
+        "start": 1337.3,
+        "end": 1356.3
+      }
+    ],
+    "visitor_question": "What was it like sharing a bed with your siblings?"
+  },
+  {
+    "question": "So when did you end up moving out?",
+    "answer_text": "When we bought our house in Hongham, you know. The Hongham, the one we bought, I think we bought at that time was Hong Kong dollars, $40,000-$50,000. We bought that house.",
+    "answer_start": 1359.3,
+    "answer_end": 1381.3,
+    "start_fmt": "22:39",
+    "label": "When she moved out of family home",
+    "mama_segments": [
+      {
+        "start": 1359.3,
+        "end": 1381.3
+      }
+    ],
+    "visitor_question": "When did your family buy their own home?"
+  },
+  {
+    "question": "Huh?",
+    "answer_text": "You guys lived in Hongham. Hongham, yeah. How interesting. Yeah, we lived in Hongham. And then we lived there for a number of years. So when Grandma moved to New York, we sold it.",
+    "answer_start": 1390.3,
+    "answer_end": 1410.3,
+    "start_fmt": "23:10",
+    "label": "Asking to repeat previous answer",
+    "mama_segments": [
+      {
+        "start": 1390.3,
+        "end": 1410.3
+      }
+    ],
+    "visitor_question": "How long did your family live in Hongham?"
+  },
+  {
+    "question": "You sold your apartment in Hongham?",
+    "answer_text": "Yeah. Double the price, that's all. $100,000. Yeah. $150,000 or more, I don't know. Yeah, yeah.",
+    "answer_start": 1413.3,
+    "answer_end": 1422.3,
+    "start_fmt": "23:33",
+    "label": "Selling apartment in Hongham",
+    "mama_segments": [
+      {
+        "start": 1413.3,
+        "end": 1422.3
+      }
+    ],
+    "visitor_question": "How much did you sell the Hongham home for?"
+  },
+  {
+    "question": "If we go back a little bit, did you have a lot of boyfriends?",
+    "answer_text": "No. I don't have a lot of boys. I heard about a taxi driver. A taxi driver always tried to take me home when I get off, that's all.",
+    "answer_start": 1428.3,
+    "answer_end": 1442.3,
+    "start_fmt": "23:48",
+    "label": "Romantic history and boyfriends",
+    "mama_segments": [
+      {
+        "start": 1429.3,
+        "end": 1433.3
+      },
+      {
+        "start": 1435.3,
+        "end": 1442.3
+      }
+    ],
+    "visitor_question": "Did you date much when you were young?"
+  },
+  {
+    "question": "Is he an old taxi driver or a young taxi driver?",
+    "answer_text": "Oh, it's one of three. Oh, it's one of three. It's one of our schoolmates. Oh, a friend. Yeah.",
+    "answer_start": 1445.3,
+    "answer_end": 1450.3799999999999,
+    "start_fmt": "24:05",
+    "label": "Age of taxi driver boyfriend",
+    "mama_segments": [
+      {
+        "start": 1445.3,
+        "end": 1449.86
+      }
+    ],
+    "visitor_question": "How did you first meet Daddy?"
+  },
+  {
+    "question": "Was he the one who brought cake? Or was there somebody else?",
+    "answer_text": "I think that's him, too. Same person. Yeah.",
+    "answer_start": 1453.94,
+    "answer_end": 1456.54,
+    "start_fmt": "24:13",
+    "label": "Who brought cake on a date",
+    "mama_segments": [
+      {
+        "start": 1453.94,
+        "end": 1456.22
+      }
+    ],
+    "visitor_question": "Was that the same person who introduced you?"
+  },
+  {
+    "question": "Really?",
+    "answer_text": "Yeah. But I didn't see him for a long, long time. Even when we had gatherings, yeah. Yeah. I don't see him, too.",
+    "answer_start": 1462.3,
+    "answer_end": 1471.96,
+    "start_fmt": "24:22",
+    "label": "Expressing surprise at a detail",
+    "mama_segments": [
+      {
+        "start": 1463.36,
+        "end": 1471.96
+      }
+    ],
+    "visitor_question": "Did you see him much after you first met?"
+  },
+  {
+    "question": "He didn't show up?",
+    "answer_text": "He didn't show up. Interesting. Yeah.",
+    "answer_start": 1473.32,
+    "answer_end": 1475.24,
+    "start_fmt": "24:33",
+    "label": "Boyfriend not showing up",
+    "mama_segments": [
+      {
+        "start": 1473.32,
+        "end": 1474.72
+      }
+    ],
+    "visitor_question": "Did he come to your gatherings?"
+  },
+  {
+    "question": "A cousin of yours?",
+    "answer_text": "Yes, a cousin of us. And then he know the family. Interesting. Yeah.",
+    "answer_start": 1490.64,
+    "answer_end": 1496.98,
+    "start_fmt": "24:50",
+    "label": "Relationship to a cousin",
+    "mama_segments": [
+      {
+        "start": 1490.64,
+        "end": 1496.3
+      }
+    ],
+    "visitor_question": "How did he find your family again?"
+  },
+  {
+    "question": "He was in school at that point, or was he already beyond school?",
+    "answer_text": "Maybe still the last... Oh, let me think. No, he's still at school. Okay. That's pretty late, because I guess he started school later, too. Yeah, because he moved to Hong Kong in 1960. Yeah. But... You've been there longer since you were there. I was 52. Yeah. Oh, interesting. Interesting, interesting.",
+    "answer_start": 1530.78,
+    "answer_end": 1554.0,
+    "start_fmt": "25:30",
+    "label": "Whether cousin was still in school",
+    "mama_segments": [
+      {
+        "start": 1530.78,
+        "end": 1542.98
+      },
+      {
+        "start": 1546.6000000000001,
+        "end": 1548.88
+      },
+      {
+        "start": 1551.0,
+        "end": 1554.0
+      }
+    ],
+    "visitor_question": "What was Daddy doing when you got together?"
+  },
+  {
+    "question": "That's still there, right?",
+    "answer_text": "Yeah. Oh, that's right. I think we went by. Yeah.",
+    "answer_start": 1589.26,
+    "answer_end": 1591.96,
+    "start_fmt": "26:29",
+    "label": "Still-standing location reference",
+    "mama_segments": [
+      {
+        "start": 1589.64,
+        "end": 1590.78
+      }
+    ],
+    "visitor_question": "Where did you get married?"
+  },
+  {
+    "question": "But we married in the government, you know?",
+    "answer_text": "Oh, the hall. Hall. Yeah. City hall. Oh, wow. That's a lot of people. Mm-hmm. Yeah, so what happened... So when Grandma moved, you said you sold that apartment that you were living in.",
+    "answer_start": 1608.1000000000001,
+    "answer_end": 1622.1000000000001,
+    "start_fmt": "26:48",
+    "label": "Government civil marriage ceremony",
+    "mama_segments": [
+      {
+        "start": 1608.1000000000001,
+        "end": 1610.54
+      },
+      {
+        "start": 1612.3400000000001,
+        "end": 1613.8
+      },
+      {
+        "start": 1616.66,
+        "end": 1622.1000000000001
+      }
+    ],
+    "visitor_question": "Where were you living when you first got married?"
+  },
+  {
+    "question": "And then is that when you moved? To Hawaii?",
+    "answer_text": "I moved to... I married 74, yeah. And then Daddy come over here because somebody asked him to invest together in a furniture place. So he joined the company, yeah. And he come. But then when he come, that's all. And then he said, too many people apply for visa for that company already. So he asked Daddy to start another company. And that's the time we get the Hotel Minima store. Under our name only. Oh, the Dragonwood. Yeah. That must have been hard for you to move here from Hong Kong.",
+    "answer_start": 1627.52,
+    "answer_end": 1676.08,
+    "start_fmt": "27:07",
+    "label": "Moving to Hawaii after marriage",
+    "mama_segments": [
+      {
+        "start": 1627.52,
+        "end": 1670.3
+      },
+      {
+        "start": 1672.48,
+        "end": 1676.08
+      }
+    ],
+    "visitor_question": "Were you nervous being pregnant without Daddy nearby?",
+    "featured": true
+  },
+  {
+    "question": "Were you nervous?",
+    "answer_text": "No. I'm not nervous. But Daddy come here first. Yeah. So when I have Marlene, Daddy is not with me. And Uncle Frank took me to hospital. So they think Uncle Frank is my husband.",
+    "answer_start": 1678.04,
+    "answer_end": 1695.8600000000001,
+    "start_fmt": "27:58",
+    "label": "Nervousness about moving abroad",
+    "mama_segments": [
+      {
+        "start": 1679.3400000000001,
+        "end": 1695.8600000000001
+      }
+    ],
+    "visitor_question": "What was it like when Marlene was born?"
+  },
+  {
+    "question": "Was that a hard pregnancy, Marlene?",
+    "answer_text": "Not really. She come two weeks earlier. I supposed to take a trip with... I mean just outing with the family. But I didn't go because Marlene come out. But I'm the one who take care of Marlene by myself for until Marlene is 13 months old. So I come over here. That must have been hard. Yeah. So I train Marlene every morning in the toilet, in the small baby toilet. So...",
+    "answer_start": 1702.06,
+    "answer_end": 1730.92,
+    "start_fmt": "28:22",
+    "label": "Difficulty of pregnancy with Marlene",
+    "mama_segments": [
+      {
+        "start": 1702.06,
+        "end": 1729.92
+      },
+      {
+        "start": 1731.92,
+        "end": 1732.92
+      }
+    ],
+    "visitor_question": "What was Marlene like as a baby?"
+  },
+  {
+    "question": "For the first 13 months?",
+    "answer_text": "I mean when she was really young. Yeah. For the first 13 months. So when she go to New York, you know, after we come here, we go to New York, she don't have to put dye on her hair. She don't have to put dye on her hair. She don't have to put dye on her hair. She don't have to put dye on her hair. She don't have to put dye on her hair. That's right. She don't have to put dye on her hair. She don't have to put dye on her hair. They need to put dye first.",
+    "answer_start": 1731.92,
+    "answer_end": 1746.92,
+    "start_fmt": "28:51",
+    "label": "First 13 months of child's life",
+    "mama_segments": [
+      {
+        "start": 1731.92,
+        "end": 1746.92
+      }
+    ],
+    "visitor_question": "What was Marlene like as a toddler?"
+  },
+  {
+    "question": "She was already pottering by one year old?",
+    "answer_text": "Wow. Yeah. She don't have. And funny thing is at home, certain times you go to nap, certain times wake up. Yeah. But when we travel, she nap when we are on the road. She'll wake up right away. And she got up at theumm... At the um. when the journey is completed. Yeah.",
+    "answer_start": 1753.24,
+    "answer_end": 1777.02,
+    "start_fmt": "29:13",
+    "label": "Child walking by one year old",
+    "mama_segments": [
+      {
+        "start": 1755.24,
+        "end": 1777.02
+      }
+    ],
+    "visitor_question": "Do you have any funny memories of potty training Marlene?"
+  },
+  {
+    "question": "Interesting. Interesting. How did you do that? Because I know Michael's having challenges,",
+    "answer_text": "potty training, Peyton, you just put her on the toilet every morning. I, but anyway, they won't listen to you. So I just mentioned to Ma Lin during her 40th birthday, I said, I remember Ma Lin was so good at that point, you know.",
+    "answer_start": 1783.82,
+    "answer_end": 1807.48,
+    "start_fmt": "29:43",
+    "label": "How she managed child's development",
+    "mama_segments": [
+      {
+        "start": 1783.82,
+        "end": 1807.48
+      }
+    ],
+    "visitor_question": "Why did your family move to New York?"
+  },
+  {
+    "question": "How come you didn't, did you think about moving to New York back then?",
+    "answer_text": "At that time, Daddy had the store here. So he said he don't want to go New York, but my family want me to, yeah, at that point. Because all of them moved. Yeah. Because Auntie Susan, she worked for a company in New York. She worked for a company in New York. She worked for a company in New York.",
+    "answer_start": 1813.24,
+    "answer_end": 1829.06,
+    "start_fmt": "30:13",
+    "label": "Considering moving to New York then",
+    "mama_segments": [
+      {
+        "start": 1813.24,
+        "end": 1828.1200000000001
+      }
+    ],
+    "visitor_question": "How did your sister Tina end up in America?"
+  },
+  {
+    "question": "In New York?",
+    "answer_text": "Tina opened up the company and somebody invited her to come to America. I remember his name is Baker, but then my sister left the company. And then when my dad pass away, so she applied my mom and family to go. By that point, my mom and family, she don't want to go, but since the consoler invite them to get an interview, she just go. And So then everybody came. Yeah, so all the family come. Because at that time my sister will be 18 years old soon. I think it's 18 years, but I'm not too sure.",
+    "answer_start": 1830.8799999999999,
+    "answer_end": 1872.0,
+    "start_fmt": "30:30",
+    "label": "Life or contacts in New York",
+    "mama_segments": [
+      {
+        "start": 1830.8799999999999,
+        "end": 1872.0
+      }
+    ],
+    "visitor_question": "What happened to Uncle Frank when the family moved?",
+    "featured": true
+  },
+  {
+    "question": "Twenty?",
+    "answer_text": "I mean, he, my younger sister, Nancy is 18, yeah. But Uncle Frank is older, so he cannot go with my mom to New York. Only Johnny and Nancy go with my mom. And she stay, he stay back in Hong Kong. So we take care of him, you know. I stay at our house to be with him. But he was older by then. He still younger than me, two years younger. But he was like in his twenties. Yeah, maybe. Yeah. Yeah, maybe. So then eventually he ended up going to New York on a visa. Yeah. And then Auntie, Auntie Angela, her uncle in a party, he meet her. And then she followed. And then Uncle Frank, he went to New York. He thought he didn't want her. Yeah. But Auntie, her auntie, she applied herself. And then a student, something like that, she went. So she stayed at our house. Grandma said, oh, cannot be like this. So then just have a man. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah. So then just have a man. Yeah.",
+    "answer_start": 1888.0,
+    "answer_end": 1976.86,
+    "start_fmt": "31:28",
+    "label": "Age reference clarification",
+    "mama_segments": [
+      {
+        "start": 1888.0,
+        "end": 1975.86
+      },
+      {
+        "start": 1977.86,
+        "end": 1978.86
+      }
+    ],
+    "visitor_question": "When did Daddy first come to America?",
+    "featured": true
+  },
+  {
+    "question": "Interesting. So when did your, your dad pass away?",
+    "answer_text": "Nineteen seventy-four I think. So that was before, while you guys were still in Hong Kong. Yeah.",
+    "answer_start": 1977.86,
+    "answer_end": 1980.86,
+    "start_fmt": "32:57",
+    "label": "When her father passed away",
+    "mama_segments": [
+      {
+        "start": 1977.86,
+        "end": 1979.86
+      },
+      {
+        "start": 1981.86,
+        "end": 1982.86
+      }
+    ],
+    "visitor_question": "How did Daddy pass away?"
+  },
+  {
+    "question": "He had a heart attack?",
+    "answer_text": "Yeah. Just like that. He's, he's trying to come back from our wedding. Originally, we were supposed to be married. Oh. But we were married. We were married. So he was still with us. Yeah. So he was still, he was still with us. Yeah. And he was, he was with us. And he, he was still with us. He's trying to come back from our wedding. Originally our wedding is earlier, but then he passed away. So my mom was so, so, so sad. She just lying on the bed every day. And I been accompanying her.",
+    "answer_start": 1983.86,
+    "answer_end": 2015.08,
+    "start_fmt": "33:03",
+    "label": "Father's cause of death",
+    "mama_segments": [
+      {
+        "start": 1983.86,
+        "end": 2015.08
+      }
+    ],
+    "visitor_question": "What happened to Daddy's health?"
+  },
+  {
+    "question": "He didn't make it to your wedding then?",
+    "answer_text": "No. He was trying to come back. He was at work. He was trying to come back. But before that, he's running in a boat, you know, running competition. But he carried those heavy stuff, you know, the beer, the thing. He not supposed to do that. But anyway, when he was in hospital, they test, they call cable. They send the cable and say, oh, he's fine. He talking with the nurses and so on. But then in the afternoon, they sent back. He passed away. Just like something clock in the house.",
+    "answer_start": 2018.4199999999998,
+    "answer_end": 2061.6400000000003,
+    "start_fmt": "33:38",
+    "label": "Father missing the wedding",
+    "mama_segments": [
+      {
+        "start": 2019.4199999999998,
+        "end": 2061.6400000000003
+      }
+    ],
+    "visitor_question": "Tell us about Daddy's early life."
+  },
+  {
+    "question": "Where did he grow up?",
+    "answer_text": "One shoulder. So he was an orphan. Something like that. He, he, when he young, he had no parents. I just remember that part. But he is very smart. He learned things by himself. Yeah. Yeah. He's so close, yeah. He's so close. But he didn't learn.",
+    "answer_start": 2100.58,
+    "answer_end": 2122.4399999999996,
+    "start_fmt": "35:00",
+    "label": "Father's hometown and upbringing",
+    "mama_segments": [
+      {
+        "start": 2100.58,
+        "end": 2122.4399999999996
+      }
+    ],
+    "visitor_question": "What do you remember about Daddy's work life?"
+  },
+  {
+    "question": "Yeah. So what did he do when his parents passed away?",
+    "answer_text": "I don't know. I don't remember what he do. I only know when I know him, he working in a ship. And for his position, he had to hire people under him, the sheriff and so on. So people come to our home, ask him to get him if he got a job, something like that. Yeah. Interesting. But he was hardly around when you were growing up, because he was always on a boat. He was, but sometimes he had no job. Yeah. Yeah. So he go to a place to pay mahjong. That's how I learned mahjong. And then my mom don't want my dad to go out that long, so she asked me to go over there, maybe with my brother or sister, I forget. So I go over there to play. That way my dad won't stay too late because we are there. Yeah.",
+    "answer_start": 2127.4399999999996,
+    "answer_end": 2190.96,
+    "start_fmt": "35:27",
+    "label": "What husband did after parents died",
+    "mama_segments": [
+      {
+        "start": 2127.4399999999996,
+        "end": 2190.96
+      }
+    ],
+    "visitor_question": "What did your parents teach you about life?",
+    "featured": true
+  },
+  {
+    "question": "I don't know. I know that she has a sister, you know? Yeah. And then she has a brother.",
+    "answer_text": "But the brother person were pretty young. And at my mom's age, normally people don't go to school. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. I mean, don't like writing, but my mom, their family let her at least know some Chinese, so she's pretty good. You know, she can write. For her age, she's very good. You know, something like that. But she … I know that she never go out and work. Yeah. Yeah. But she's never worked. She never worked. She only take care of us. We have five, yeah. Okay. But she made us work too. Five is a lot. Yeah, five is a lot. So as I mentioned, when my dad passed away, basically we had nothing. So me, my sister, work. So we give all the money to Grandma.",
+    "answer_start": 2214.2400000000002,
+    "answer_end": 2276.08,
+    "start_fmt": "36:54",
+    "label": "Clarifying husband's siblings",
+    "mama_segments": [
+      {
+        "start": 2214.2400000000002,
+        "end": 2246.2000000000003
+      },
+      {
+        "start": 2248.2000000000003,
+        "end": 2276.08
+      }
+    ],
+    "visitor_question": "What life skills did your parents pass on to you?"
+  },
+  {
+    "question": "What did you learn from your parents? What are the things you remember learning from them?",
+    "answer_text": "I don't know. I don't know what I learned from them. I just know how to clean, go to market. You just were left alone, I guess, in you guys' lives. Yeah. You had to learn everything on your own. Yeah. Because I remember at my young age, when my teeth hurt, my mom would say, go to the dentist. She don't even take me to. Go to the dentist. Have you pulled out. So I pulled out one and one, and we all replacement. So my teeth, you know, just pull out the other teeth on the upper level. Going down. Yeah. Because supposed to have here some more teeth. So my teeth. You already had no teeth when you were young. Because when my teeth hurt, my mom just say, go to the dentist and pull it out. That's all. She don't even take me.",
+    "answer_start": 2286.08,
+    "answer_end": 2358.08,
+    "start_fmt": "38:06",
+    "label": "Lessons learned from parents",
+    "mama_segments": [
+      {
+        "start": 2286.08,
+        "end": 2314.08
+      },
+      {
+        "start": 2316.08,
+        "end": 2358.08
+      }
+    ],
+    "visitor_question": "Did your parents take you to the dentist?"
+  },
+  {
+    "question": "Did they give you any medicine?",
+    "answer_text": "Not really, I think. I don't remember. I don't remember that. They just go and pull out, not repair like what we did nowadays, yeah. So nothing. My mom don't even teach us to brush the teeth or whatever. You know, when we live in a small place, we don't have our own bathroom. So we have to do whatever.",
+    "answer_start": 2369.08,
+    "answer_end": 2394.08,
+    "start_fmt": "39:29",
+    "label": "Whether medicine was given for illness",
+    "mama_segments": [
+      {
+        "start": 2369.08,
+        "end": 2394.08
+      }
+    ],
+    "visitor_question": "What is a funny memory from your Hongham days?"
+  },
+  {
+    "question": "You didn't have your own bathroom?",
+    "answer_text": "Yeah, I remember one time when I'm living in Hongham. We hear, we get a room, yeah. And I take a bath. And then I climb up to comb my hair because it was wet. And I was short, yeah. So I have to stand up in a chair and then fall down. So on the room that we have a water bottle. The water bottle hit me on the back. So I still have scar. And I have the ambulance come. And so the sticky. I still have a calf over there because I climb up the millers up there. And then the water bottle. And I fall down. The water bottle falls on me. Oh. Yeah.",
+    "answer_start": 2396.08,
+    "answer_end": 2444.08,
+    "start_fmt": "39:56",
+    "label": "Lack of private bathroom facilities",
+    "mama_segments": [
+      {
+        "start": 2396.08,
+        "end": 2442.08
+      }
+    ],
+    "visitor_question": "What was life like without modern technology?",
+    "featured": true
+  },
+  {
+    "question": "So how did you learn how to do everything if there was no internet back then?",
+    "answer_text": "No problem. Of course no internet. No phone. And we go to.",
+    "answer_start": 2457.08,
+    "answer_end": 2463.08,
+    "start_fmt": "40:57",
+    "label": "Learning household skills without internet",
+    "mama_segments": [
+      {
+        "start": 2457.08,
+        "end": 2463.08
+      }
+    ],
+    "visitor_question": "How did you sneak into the movies as kids?"
+  },
+  {
+    "question": "No phones?",
+    "answer_text": "Yeah. And we go to movie once a while. And we go for the cheap kind, you know. Two bucks, four bucks, that kind. And then we don't go by one people in one seat. We try to sneak in. So we buy one ticket and lots of people sneak in. And we sit all close together to just watch.",
+    "answer_start": 2464.08,
+    "answer_end": 2486.08,
+    "start_fmt": "41:04",
+    "label": "Managing without phones back then",
+    "mama_segments": [
+      {
+        "start": 2465.08,
+        "end": 2486.08
+      }
+    ],
+    "visitor_question": "How did you watch TV before you had one?"
+  },
+  {
+    "question": "Do you remember any of them?",
+    "answer_text": "No. I was so young. But then we have no TV too. At first we have no refrigerator. But then we have no TV. We go to those . You know, . And over there they have TV. So we go to . And then get. And then we go to the hospital. And then we go to the hospital. And then we go to the hospital. And then get to watch something. That's so interesting. Yeah. We have no refrigerator. So we have no ice cube. So once a while I go to Lantau, to buy ice cube. Ten cents or something. And then we put sugar into the ice cube. And then. That's impressive. It sounds like you were, you did everything on your own. Yeah.",
+    "answer_start": 2493.08,
+    "answer_end": 2545.08,
+    "start_fmt": "41:33",
+    "label": "Remembering specific people or events",
+    "mama_segments": [
+      {
+        "start": 2494.08,
+        "end": 2544.08
+      }
+    ],
+    "visitor_question": "How did you find your way around the city as a child?"
+  },
+  {
+    "question": "Was it safe to do that when you were young?",
+    "answer_text": "Nobody think about that at that point. You know, my, as I told you, I take auntie to register in a school. I don't know how I know the way. I just go to take a little bit fast, but I walk most of the way, all the way going down there. My mom don't even take us. Yeah. Wow. Are your, are they.",
+    "answer_start": 2548.08,
+    "answer_end": 2573.08,
+    "start_fmt": "42:28",
+    "label": "Safety during childhood outings",
+    "mama_segments": [
+      {
+        "start": 2548.08,
+        "end": 2570.08
+      },
+      {
+        "start": 2572.08,
+        "end": 2573.08
+      }
+    ],
+    "visitor_question": "How would you describe your mother?",
+    "featured": true
+  },
+  {
+    "question": "Are they grateful for you taking care of them when you were young?",
+    "answer_text": "I don't know. And I say, oh mom, you never work before. She say, oh, I have to take care of all of you. Even she don't work, but she has very power. She's powerful. You know that. Yeah. Thank you. This is, this is great. I'm going to pause for a minute. It's been 45 minutes. Thank you so much. We'll, we'll continue this a little bit later. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye. Bye.",
+    "answer_start": 2579.08,
+    "answer_end": 2631.08,
+    "start_fmt": "42:59",
+    "label": "Whether siblings are grateful for her care",
+    "mama_segments": [
+      {
+        "start": 2579.08,
+        "end": 2596.08
+      },
+      {
+        "start": 2599.08,
+        "end": 2605.08
+      }
+    ]
+  }
+]
