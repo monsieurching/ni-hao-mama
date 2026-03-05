@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Original large audio files (use audio.mp3 instead)
+*.m4a
+
+# Whisper only needed locally
+transcript.json

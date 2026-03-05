@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>你好妈妈 — Analytics</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    .admin-wrap { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    /* ── Stat cards ── */
+    .stat-row { display: flex; gap: 20px; margin: 28px 0; flex-wrap: wrap; }
+    .stat-card {
+      background: var(--page);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 20px 28px;
+      flex: 1;
+      min-width: 160px;
+    }
+    .stat-card .number {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 2.4rem;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .stat-card .label {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin: 44px 0 16px;
+    }
+
+    /* ── Popularity bars ── */
+    .pop-list { display: flex; flex-direction: column; gap: 10px; }
+    .pop-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .pop-rank {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 0.75rem;
+      color: var(--muted);
+      width: 22px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .pop-bar-wrap {
+      flex: 1;
+      background: var(--border);
+      border-radius: 99px;
+      height: 6px;
+      overflow: hidden;
+    }
+    .pop-bar {
+      height: 100%;
+      background: var(--gold);
+      border-radius: 99px;
+      transition: width 0.6s ease;
+    }
+    .pop-label {
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      color: var(--ink);
+      flex: 2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .pop-count {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      width: 36px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    /* ── Recent questions table ── */
+    table { width: 100%; border-collapse: collapse; margin-top: 4px; }
+    th {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 2px solid var(--border);
+    }
+    td {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: var(--ink);
+    }
+    tr:hover td { background: #f5ece0; }
+    .tag {
+      display: inline-block;
+      background: #f5e0d0;
+      color: var(--red);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 99px;
+      margin: 1px;
+    }
+    .ts   { color: var(--muted); font-size: 0.82rem; white-space: nowrap; }
+    .muted-text { color: var(--muted); font-style: italic; }
+  </style>
+</head>
+<body>
+  <div class="admin-wrap">
+    <div class="monogram" style="text-align:left">妈.</div>
+    <h1 style="font-family:var(--font-display);font-weight:900;font-size:1.8rem;color:var(--ink);margin:8px 0 4px;text-transform:uppercase">Analytics</h1>
+    <p style="font-family:var(--font-body);font-style:italic;font-size:0.9rem;color:var(--muted)">你好妈妈 — conversation log</p>
+
+    <div class="stat-row" id="stats">
+      <div class="stat-card">
+        <div class="number" id="total-count">—</div>
+        <div class="label">Total plays</div>
+      </div>
+      <div class="stat-card">
+        <div class="number" id="unique-clips">—</div>
+        <div class="label">Unique clips heard</div>
+      </div>
+      <div class="stat-card">
+        <div class="number" id="top-clip-count">—</div>
+        <div class="label">Plays of #1 clip</div>
+      </div>
+    </div>
+
+    <h2>Most Popular Clips</h2>
+    <div class="pop-list" id="pop-list">
+      <p class="muted-text" style="font-family:var(--font-body);font-size:0.9rem;">Loading…</p>
+    </div>
+
+    <h2>Recent Questions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>When</th>
+          <th>Asked</th>
+          <th>Matched clip</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const token = new URLSearchParams(location.search).get("token");
+
+    function fmt(ts) {
+      const d = new Date(ts);
+      return d.toLocaleDateString("en-US", { day:"numeric", month:"short" })
+           + " " + d.toLocaleTimeString("en-US", { hour:"2-digit", minute:"2-digit" });
+    }
+
+    function tagify(cited) {
+      if (!cited) return '<span class="muted-text">—</span>';
+      return cited.split(", ").map(t => `<span class="tag">${t}</span>`).join(" ");
+    }
+
+    fetch(`/admin/data?token=${token}`)
+      .then(r => r.json())
+      .then(data => {
+        if (data.error) {
+          document.body.innerHTML += `<p style="color:red;padding:20px">${data.error}</p>`;
+          return;
+        }
+
+        // ── Stat cards ──────────────────────────────────────────────
+        document.getElementById("total-count").textContent = data.total;
+
+        // Count by matched_question
+        const counts = {};
+        data.rows.forEach(r => {
+          const q = (r.matched_question || "").trim();
+          if (q) counts[q] = (counts[q] || 0) + 1;
+        });
+
+        const ranked = Object.entries(counts)
+          .sort((a, b) => b[1] - a[1]);
+
+        document.getElementById("unique-clips").textContent = ranked.length || "—";
+        document.getElementById("top-clip-count").textContent = ranked.length ? ranked[0][1] : "—";
+
+        // ── Popularity bars ─────────────────────────────────────────
+        const popEl = document.getElementById("pop-list");
+        if (ranked.length === 0) {
+          popEl.innerHTML = '<p class="muted-text" style="font-family:var(--font-body);font-size:0.9rem;">No data yet — plays will appear here as people use the app.</p>';
+        } else {
+          const maxCount = ranked[0][1];
+          const top = ranked.slice(0, 15);
+          popEl.innerHTML = top.map(([q, count], i) => `
+            <div class="pop-row">
+              <div class="pop-rank">${i + 1}</div>
+              <div class="pop-label" title="${q}">${q}</div>
+              <div class="pop-bar-wrap">
+                <div class="pop-bar" style="width:${Math.round(count / maxCount * 100)}%"></div>
+              </div>
+              <div class="pop-count">${count}×</div>
+            </div>
+          `).join("");
+        }
+
+        // ── Recent questions table ───────────────────────────────────
+        const tbody = document.getElementById("rows");
+        if (data.rows.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="4" class="muted-text">No questions yet.</td></tr>';
+        } else {
+          data.rows.forEach(r => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="ts">${fmt(r.created_at)}</td>
+              <td>${r.question || '<span class="muted-text">—</span>'}</td>
+              <td>${r.matched_question || '<span class="muted-text">—</span>'}</td>
+              <td>${tagify(r.timestamps_cited)}</td>
+            `;
+            tbody.appendChild(tr);
+          });
+        }
+      })
+      .catch(() => {
+        document.getElementById("pop-list").innerHTML =
+          '<p style="color:red;font-family:var(--font-body)">Could not load data.</p>';
+      });
+  </script>
+</body>
+</html>
