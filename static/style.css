@@ -93,20 +93,20 @@ header .byline {
 
 #question-chips {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
+  max-height: 120px;
+  overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
 }
 
-#question-chips::-webkit-scrollbar       { height: 3px; }
+#question-chips::-webkit-scrollbar       { width: 3px; }
 #question-chips::-webkit-scrollbar-track { background: transparent; }
 #question-chips::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
 .chip {
-  flex-shrink: 0;
   background: var(--page);
   border: 1px solid var(--border);
   border-radius: 99px;
@@ -140,12 +140,10 @@ header .byline {
 }
 
 .chip-divider {
-  flex-shrink: 0;
-  display: inline-block;
-  width: 1px;
-  background: var(--border);
-  margin: 4px 4px;
-  align-self: stretch;
+  flex-basis: 100%;
+  height: 0;
+  border-top: 1px solid var(--border);
+  margin: 2px 0;
 }
 
 /* ── Answer elements ─────────────────────────────────────────────── */
