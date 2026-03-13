@@ -8,22 +8,32 @@
 </head>
 <body>
   <div id="app">
+
     <header>
-      <div class="monogram">M.B.</div>
-      <h1>你好妈妈</h1>
-      <p class="byline">By Monsieur Ching</p>
+      <div id="photo-stage">
+        <img class="photo active" src="/static/photos/photo1.jpg" alt="">
+        <img class="photo"        src="/static/photos/photo2.jpg" alt="">
+        <img class="photo"        src="/static/photos/photo3.jpg" alt="">
+        <img class="photo"        src="/static/photos/photo4.jpg" alt="">
+        <img class="photo"        src="/static/photos/photo5.jpg" alt="">
+      </div>
+      <div id="header-text">
+        <div class="monogram">M.B.</div>
+        <h1>你好妈妈</h1>
+        <p class="byline">By Monsieur Ching</p>
+      </div>
     </header>
 
     <div id="deck-area">
-      <div id="card">
+      <div id="card" class="playable" role="button" tabindex="0" aria-label="Tap to hear Mama's answer">
         <div id="card-label"></div>
         <div id="card-question"></div>
-        <button id="play-btn">▶ &nbsp;Hear Mama</button>
+        <div id="card-hint">&#9654;</div>
         <div id="card-answer" class="hidden">
           <div class="answer-rule"><span>Mama's answer</span></div>
           <div id="answer-meta"></div>
           <div id="answer-text"></div>
-          <button id="replay-btn">▶ &nbsp;Play again</button>
+          <button id="replay-btn">&#9654; &nbsp;Play again</button>
         </div>
       </div>
 
@@ -33,28 +43,31 @@
         <button id="next-btn" title="Next (→)">&#8594;</button>
       </div>
     </div>
+
   </div>
 
   <audio id="mama-audio" preload="none"></audio>
 
   <script>
-    const cardEl      = document.getElementById("card");
-    const labelEl     = document.getElementById("card-label");
-    const questionEl  = document.getElementById("card-question");
-    const playBtn     = document.getElementById("play-btn");
-    const answerEl    = document.getElementById("card-answer");
-    const answerMeta  = document.getElementById("answer-meta");
-    const answerText  = document.getElementById("answer-text");
-    const replayBtn   = document.getElementById("replay-btn");
-    const counterEl   = document.getElementById("counter-text");
-    const prevBtn     = document.getElementById("prev-btn");
-    const nextBtn     = document.getElementById("next-btn");
-    const audioEl     = document.getElementById("mama-audio");
+    // ── Elements ─────────────────────────────────────────────────────
+    const cardEl     = document.getElementById("card");
+    const labelEl    = document.getElementById("card-label");
+    const questionEl = document.getElementById("card-question");
+    const hintEl     = document.getElementById("card-hint");
+    const answerEl   = document.getElementById("card-answer");
+    const answerMeta = document.getElementById("answer-meta");
+    const answerText = document.getElementById("answer-text");
+    const replayBtn  = document.getElementById("replay-btn");
+    const counterEl  = document.getElementById("counter-text");
+    const prevBtn    = document.getElementById("prev-btn");
+    const nextBtn    = document.getElementById("next-btn");
+    const audioEl    = document.getElementById("mama-audio");
 
-    let cards       = [];
-    let currentIdx  = 0;
+    let cards      = [];
+    let currentIdx = 0;
     let audioPrimed = false;
 
+    // ── Audio ─────────────────────────────────────────────────────────
     function primeAudio() {
       if (audioPrimed) return;
       audioPrimed = true;
@@ -71,18 +84,17 @@
       audioEl.play().catch(() => {});
     }
 
+    // ── Card rendering ────────────────────────────────────────────────
     function renderCard() {
       const c = cards[currentIdx];
-
       labelEl.textContent    = c.label || "";
       questionEl.textContent = c.question;
       counterEl.textContent  = `${currentIdx + 1} / ${cards.length}`;
-
       answerEl.classList.add("hidden");
-      playBtn.style.display = "";
       answerText.textContent = "";
       answerMeta.textContent = "";
-
+      hintEl.style.display   = "";
+      cardEl.classList.add("playable");
       prevBtn.disabled = currentIdx === 0;
       nextBtn.disabled = currentIdx === cards.length - 1;
     }
@@ -107,41 +119,52 @@
       answerMeta.textContent = `${c.start_fmt} · ${fmt}`;
       answerText.textContent = c.answer_text || "";
       answerEl.classList.remove("hidden");
-      playBtn.style.display = "none";
+      hintEl.style.display = "none";
+      cardEl.classList.remove("playable");
     }
 
-    playBtn.addEventListener("click", () => {
+    // ── Card click ────────────────────────────────────────────────────
+    cardEl.addEventListener("click", () => {
+      if (!cardEl.classList.contains("playable")) return;
       primeAudio();
       const c = cards[currentIdx];
       playClip(c.custom_segments || c.segments);
       revealAnswer();
     });
 
-    replayBtn.addEventListener("click", () => {
-      primeAudio();
-      const c = cards[currentIdx];
-      playClip(c.custom_segments || c.segments);
-    });
-
-    prevBtn.addEventListener("click", () => {
-      if (currentIdx > 0) showCard(currentIdx - 1);
-    });
-
-    nextBtn.addEventListener("click", () => {
-      if (currentIdx < cards.length - 1) showCard(currentIdx + 1);
-    });
-
-    document.addEventListener("keydown", e => {
-      if (e.key === "ArrowLeft")  prevBtn.click();
-      else if (e.key === "ArrowRight") nextBtn.click();
-      else if ((e.key === " " || e.key === "Enter") && !answerEl.classList.contains("hidden") === false) {
-        // already revealed — do nothing
-      } else if (e.key === " " && answerEl.classList.contains("hidden")) {
+    cardEl.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        playBtn.click();
+        cardEl.click();
       }
     });
 
+    replayBtn.addEventListener("click", e => {
+      e.stopPropagation();
+      primeAudio();
+      playClip(cards[currentIdx].custom_segments || cards[currentIdx].segments);
+    });
+
+    // ── Navigation ────────────────────────────────────────────────────
+    prevBtn.addEventListener("click", () => { if (currentIdx > 0) showCard(currentIdx - 1); });
+    nextBtn.addEventListener("click", () => { if (currentIdx < cards.length - 1) showCard(currentIdx + 1); });
+
+    document.addEventListener("keydown", e => {
+      if (e.target === cardEl) return;
+      if (e.key === "ArrowLeft")  prevBtn.click();
+      if (e.key === "ArrowRight") nextBtn.click();
+    });
+
+    // ── Photo rotation ────────────────────────────────────────────────
+    const photos  = Array.from(document.querySelectorAll(".photo"));
+    let photoIdx  = 0;
+    setInterval(() => {
+      photos[photoIdx].classList.remove("active");
+      photoIdx = (photoIdx + 1) % photos.length;
+      photos[photoIdx].classList.add("active");
+    }, 4500);
+
+    // ── Load ──────────────────────────────────────────────────────────
     fetch("/questions")
       .then(r => r.json())
       .then(qs => {
