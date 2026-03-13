@@ -161,8 +161,8 @@ html, body {
   scrollbar-width: thin;
   scrollbar-color: var(--card-border) transparent;
 
-  /* Don't stretch to fill all remaining space — let content breathe */
-  flex: 0 1 auto;
+  /* On mobile: fill the available height */
+  flex: 1;
   min-height: 140px;
 }
 
