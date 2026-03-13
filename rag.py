@@ -55,15 +55,19 @@ def get_all_questions(popular_order=None) -> list[dict]:
         for i, c in enumerate(CUSTOM_CHIPS)
     ]
 
-    featured = [
-        {"id": i, "question": p.get("visitor_question", p.get("label", p["question"])), "start_fmt": p["start_fmt"]}
-        for i, p in enumerate(pairs) if p.get("featured")
-    ]
+    def _card(i, p):
+        segs = p.get("mama_segments") or [{"start": p["answer_start"], "end": p["answer_end"]}]
+        return {
+            "id":          i,
+            "question":    p.get("visitor_question", p.get("label", p["question"])),
+            "label":       p.get("label", ""),
+            "start_fmt":   p["start_fmt"],
+            "segments":    [[s["start"], s["end"]] for s in segs],
+            "answer_text": p.get("answer_text", ""),
+        }
 
-    rest = [
-        {"id": i, "question": p.get("visitor_question", p.get("label", p["question"])), "start_fmt": p["start_fmt"]}
-        for i, p in enumerate(pairs) if not p.get("featured")
-    ]
+    featured = [_card(i, p) for i, p in enumerate(pairs) if p.get("featured")]
+    rest     = [_card(i, p) for i, p in enumerate(pairs) if not p.get("featured")]
 
     if popular_order:
         rest.sort(key=lambda q: -popular_order.get(q["question"], 0))

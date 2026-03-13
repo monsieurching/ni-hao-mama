@@ -14,48 +14,47 @@
       <p class="byline">By Monsieur Ching</p>
     </header>
 
-    <div id="questions-strip">
-      <p class="qs-label">Questions from the interview</p>
-      <div id="question-chips"></div>
-    </div>
-
-    <div id="chat-window">
-      <div id="messages">
-        <div class="message assistant">
-          <div class="msg-label">Mama</div>
-          <div class="bubble">
-            你好. Click a question above, or ask me something in your own words.
-          </div>
+    <div id="deck-area">
+      <div id="card">
+        <div id="card-label"></div>
+        <div id="card-question"></div>
+        <button id="play-btn">▶ &nbsp;Hear Mama</button>
+        <div id="card-answer" class="hidden">
+          <div class="answer-rule"><span>Mama's answer</span></div>
+          <div id="answer-meta"></div>
+          <div id="answer-text"></div>
+          <button id="replay-btn">▶ &nbsp;Play again</button>
         </div>
       </div>
-    </div>
 
-    <div id="input-area">
-      <textarea
-        id="user-input"
-        placeholder="Ask Baba something… (Enter to send)"
-        rows="2"
-        autofocus
-      ></textarea>
-      <button id="send-btn" title="Send">&#9654;</button>
+      <div id="card-nav">
+        <button id="prev-btn" title="Previous (←)">&#8592;</button>
+        <span id="counter-text">– / –</span>
+        <button id="next-btn" title="Next (→)">&#8594;</button>
+      </div>
     </div>
   </div>
 
-  <!-- Persistent audio element: avoids autoplay policy issues across browsers -->
   <audio id="mama-audio" preload="none"></audio>
 
   <script>
-    const messagesEl = document.getElementById("messages");
-    const inputEl    = document.getElementById("user-input");
-    const sendBtn    = document.getElementById("send-btn");
-    const chipsEl    = document.getElementById("question-chips");
+    const cardEl      = document.getElementById("card");
+    const labelEl     = document.getElementById("card-label");
+    const questionEl  = document.getElementById("card-question");
+    const playBtn     = document.getElementById("play-btn");
+    const answerEl    = document.getElementById("card-answer");
+    const answerMeta  = document.getElementById("answer-meta");
+    const answerText  = document.getElementById("answer-text");
+    const replayBtn   = document.getElementById("replay-btn");
+    const counterEl   = document.getElementById("counter-text");
+    const prevBtn     = document.getElementById("prev-btn");
+    const nextBtn     = document.getElementById("next-btn");
+    const audioEl     = document.getElementById("mama-audio");
 
-    let isLoading = false;
-    const audioEl = document.getElementById("mama-audio");
-
-    // Prime audio on first user interaction so iOS/Safari allows playback
-    // after async gaps (fetch). Must be called synchronously within a gesture.
+    let cards       = [];
+    let currentIdx  = 0;
     let audioPrimed = false;
+
     function primeAudio() {
       if (audioPrimed) return;
       audioPrimed = true;
@@ -64,158 +63,91 @@
       audioEl.pause();
     }
 
-    // ── Load question chips ──────────────────────────────────────────
-    fetch("/questions")
-      .then(r => r.json())
-      .then(qs => {
-        let addedDivider = false;
-        qs.forEach(q => {
-          // Insert divider before the first non-featured, non-custom chip
-          if (!addedDivider && typeof q.id === "number" && !q.custom_segments) {
-            const div = document.createElement("span");
-            div.className = "chip-divider";
-            chipsEl.appendChild(div);
-            addedDivider = true;
-          }
-
-          const chip = document.createElement("button");
-          chip.className = q.custom_segments ? "chip chip-special" : "chip";
-          chip.textContent = q.question.length > 90
-            ? q.question.slice(0, 90) + "…"
-            : q.question;
-          chip.title = q.question;
-
-          if (q.custom_segments) {
-            // Custom chips play audio directly without going through /chat
-            chip.addEventListener("click", () => {
-              primeAudio();
-              appendMessage("user", escHtml(q.question));
-              const segs = q.custom_segments;
-              const dur  = segs.reduce((s, seg) => s + (seg[1] - seg[0]), 0);
-              const mins = Math.floor(dur / 60);
-              const secs = Math.round(dur % 60);
-              const durFmt = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
-              const segsJson = escHtml(JSON.stringify(segs));
-              appendMessage("assistant", `
-                <div class="answer-meta">${escHtml(q.start_fmt)} · ${durFmt}</div>
-                <button class="replay-btn" onclick="playClip(null, null, ${segsJson})">
-                  ▶ Play again
-                </button>
-              `);
-              playClip(null, null, segs);
-              scrollToBottom();
-            });
-          } else {
-            chip.addEventListener("click", () => {
-              inputEl.value = q.question;
-              sendMessage();
-            });
-          }
-
-          chipsEl.appendChild(chip);
-        });
-      });
-
-    // ── Helpers ──────────────────────────────────────────────────────
-    function scrollToBottom() {
-      const w = document.getElementById("chat-window");
-      w.scrollTop = w.scrollHeight;
-    }
-
-    function appendMessage(role, html) {
-      const wrapper = document.createElement("div");
-      wrapper.className = `message ${role}`;
-
-      const label = document.createElement("div");
-      label.className   = "msg-label";
-      label.textContent = role === "user" ? "You" : "Mama";
-
-      const bubble = document.createElement("div");
-      bubble.className = "bubble";
-      bubble.innerHTML = html;
-
-      wrapper.appendChild(label);
-      wrapper.appendChild(bubble);
-      messagesEl.appendChild(wrapper);
-      scrollToBottom();
-      return bubble;
-    }
-
-    function setLoading(on) {
-      isLoading        = on;
-      sendBtn.disabled = on;
-      inputEl.disabled = on;
-      sendBtn.innerHTML = on ? "…" : "&#9654;";
-    }
-
-    function playClip(start, end, segments) {
-      const url = segments
-        ? `/clip?segments=${encodeURIComponent(JSON.stringify(segments))}`
-        : `/clip?start=${start}&end=${end}`;
+    function playClip(segments) {
+      const url = `/clip?segments=${encodeURIComponent(JSON.stringify(segments))}`;
       audioEl.pause();
       audioEl.src = url;
       audioEl.load();
       audioEl.play().catch(() => {});
     }
 
-    // ── Send ─────────────────────────────────────────────────────────
-    async function sendMessage() {
-      const text = inputEl.value.trim();
-      if (!text || isLoading) return;
+    function renderCard() {
+      const c = cards[currentIdx];
 
-      primeAudio(); // Must be called synchronously before any await
-      inputEl.value = "";
-      appendMessage("user", escHtml(text));
-      setLoading(true);
+      labelEl.textContent    = c.label || "";
+      questionEl.textContent = c.question;
+      counterEl.textContent  = `${currentIdx + 1} / ${cards.length}`;
 
-      const loadingBubble = appendMessage("assistant", '<span class="cursor">▌</span>');
+      answerEl.classList.add("hidden");
+      playBtn.style.display = "";
+      answerText.textContent = "";
+      answerMeta.textContent = "";
 
-      try {
-        const res  = await fetch("/chat", {
-          method:  "POST",
-          headers: { "Content-Type": "application/json" },
-          body:    JSON.stringify({ message: text }),
-        });
-        const data = await res.json();
-
-        if (data.error) {
-          loadingBubble.innerHTML = `<em>${escHtml(data.error)}</em>`;
-        } else {
-          const dur  = data.baba_duration || Math.round(data.clip_end - data.clip_start);
-          const mins = Math.floor(dur / 60);
-          const secs = dur % 60;
-          const durFmt = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
-          const segs = data.baba_segments || null;
-          const segsJson = segs ? escHtml(JSON.stringify(segs)) : "null";
-          loadingBubble.innerHTML = `
-            <div class="answer-meta">${escHtml(data.start_fmt)} · ${durFmt}</div>
-            <button class="replay-btn" onclick="playClip(${data.clip_start}, ${data.clip_end}, ${segsJson})">
-              ▶ Play again
-            </button>
-          `;
-          playClip(data.clip_start, data.clip_end, segs);
-        }
-      } catch (err) {
-        loadingBubble.innerHTML = `<em>Connection error: ${escHtml(err.message)}</em>`;
-      }
-
-      setLoading(false);
-      inputEl.focus();
-      scrollToBottom();
+      prevBtn.disabled = currentIdx === 0;
+      nextBtn.disabled = currentIdx === cards.length - 1;
     }
 
-    function escHtml(str) {
-      return String(str)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
+    function showCard(idx) {
+      cardEl.classList.add("fading");
+      setTimeout(() => {
+        currentIdx = idx;
+        renderCard();
+        cardEl.classList.remove("fading");
+      }, 180);
     }
 
-    sendBtn.addEventListener("click", sendMessage);
-    inputEl.addEventListener("keydown", e => {
-      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+    function revealAnswer() {
+      const c    = cards[currentIdx];
+      const segs = c.custom_segments || c.segments;
+      const dur  = segs.reduce((s, seg) => s + (seg[1] - seg[0]), 0);
+      const mins = Math.floor(dur / 60);
+      const secs = Math.round(dur % 60);
+      const fmt  = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+
+      answerMeta.textContent = `${c.start_fmt} · ${fmt}`;
+      answerText.textContent = c.answer_text || "";
+      answerEl.classList.remove("hidden");
+      playBtn.style.display = "none";
+    }
+
+    playBtn.addEventListener("click", () => {
+      primeAudio();
+      const c = cards[currentIdx];
+      playClip(c.custom_segments || c.segments);
+      revealAnswer();
     });
+
+    replayBtn.addEventListener("click", () => {
+      primeAudio();
+      const c = cards[currentIdx];
+      playClip(c.custom_segments || c.segments);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIdx > 0) showCard(currentIdx - 1);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIdx < cards.length - 1) showCard(currentIdx + 1);
+    });
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft")  prevBtn.click();
+      else if (e.key === "ArrowRight") nextBtn.click();
+      else if ((e.key === " " || e.key === "Enter") && !answerEl.classList.contains("hidden") === false) {
+        // already revealed — do nothing
+      } else if (e.key === " " && answerEl.classList.contains("hidden")) {
+        e.preventDefault();
+        playBtn.click();
+      }
+    });
+
+    fetch("/questions")
+      .then(r => r.json())
+      .then(qs => {
+        cards = qs;
+        if (cards.length) renderCard();
+      });
   </script>
 </body>
 </html>
