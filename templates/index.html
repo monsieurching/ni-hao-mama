@@ -10,13 +10,8 @@
   <div id="app">
 
     <header>
-      <div id="photo-stage">
-        <img class="photo active" src="/static/photos/photo1.jpg" alt="">
-        <img class="photo"        src="/static/photos/photo2.jpg" alt="">
-        <img class="photo"        src="/static/photos/photo3.jpg" alt="">
-        <img class="photo"        src="/static/photos/photo4.jpg" alt="">
-        <img class="photo"        src="/static/photos/photo5.jpg" alt="">
-      </div>
+      <div id="photo-blur"></div>
+      <img id="photo-img" src="/static/photos/photo1.jpg" alt="">
       <div id="header-text">
         <div class="monogram">M.B.</div>
         <h1>你好妈妈</h1>
@@ -49,6 +44,23 @@
   <audio id="mama-audio" preload="none"></audio>
 
   <script>
+    const PHOTOS = [
+      "/static/photos/photo1.jpg",
+      "/static/photos/photo2.jpg",
+      "/static/photos/photo3.jpg",
+      "/static/photos/photo4.jpg",
+      "/static/photos/photo5.jpg",
+    ];
+
+    // Card background palettes [bg, border-color]
+    const CARD_COLORS = [
+      ["#FFFCF7", "#E8DDD0"],   // warm ivory
+      ["#FDF3F0", "#EDD8D2"],   // soft rose
+      ["#F4F6F0", "#D8DECC"],   // pale sage
+      ["#FEF8ED", "#E8D9A8"],   // warm gold
+      ["#F6F2F7", "#DCCFE0"],   // dusty lavender
+    ];
+
     // ── Elements ─────────────────────────────────────────────────────
     const cardEl     = document.getElementById("card");
     const labelEl    = document.getElementById("card-label");
@@ -62,9 +74,12 @@
     const prevBtn    = document.getElementById("prev-btn");
     const nextBtn    = document.getElementById("next-btn");
     const audioEl    = document.getElementById("mama-audio");
+    const photoImg   = document.getElementById("photo-img");
+    const photoBlur  = document.getElementById("photo-blur");
 
-    let cards      = [];
-    let currentIdx = 0;
+    let cards       = [];
+    let currentIdx  = 0;
+    let photoIdx    = 0;
     let audioPrimed = false;
 
     // ── Audio ─────────────────────────────────────────────────────────
@@ -87,6 +102,8 @@
     // ── Card rendering ────────────────────────────────────────────────
     function renderCard() {
       const c = cards[currentIdx];
+      const [bg, border] = CARD_COLORS[currentIdx % CARD_COLORS.length];
+
       labelEl.textContent    = c.label || "";
       questionEl.textContent = c.question;
       counterEl.textContent  = `${currentIdx + 1} / ${cards.length}`;
@@ -95,6 +112,10 @@
       answerMeta.textContent = "";
       hintEl.style.display   = "";
       cardEl.classList.add("playable");
+
+      cardEl.style.setProperty("--card-bg",     bg);
+      cardEl.style.setProperty("--card-border", border);
+
       prevBtn.disabled = currentIdx === 0;
       nextBtn.disabled = currentIdx === cards.length - 1;
     }
@@ -127,16 +148,12 @@
     cardEl.addEventListener("click", () => {
       if (!cardEl.classList.contains("playable")) return;
       primeAudio();
-      const c = cards[currentIdx];
-      playClip(c.custom_segments || c.segments);
+      playClip(cards[currentIdx].custom_segments || cards[currentIdx].segments);
       revealAnswer();
     });
 
     cardEl.addEventListener("keydown", e => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        cardEl.click();
-      }
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cardEl.click(); }
     });
 
     replayBtn.addEventListener("click", e => {
@@ -156,13 +173,20 @@
     });
 
     // ── Photo rotation ────────────────────────────────────────────────
-    const photos  = Array.from(document.querySelectorAll(".photo"));
-    let photoIdx  = 0;
-    setInterval(() => {
-      photos[photoIdx].classList.remove("active");
-      photoIdx = (photoIdx + 1) % photos.length;
-      photos[photoIdx].classList.add("active");
-    }, 4500);
+    function cyclePhoto() {
+      photoImg.style.opacity  = "0";
+      photoBlur.style.opacity = "0";
+      setTimeout(() => {
+        photoIdx = (photoIdx + 1) % PHOTOS.length;
+        const src = PHOTOS[photoIdx];
+        photoImg.src = src;
+        photoBlur.style.backgroundImage = `url('${src}')`;
+        photoImg.style.opacity  = "1";
+        photoBlur.style.opacity = "1";
+      }, 700);
+    }
+
+    setInterval(cyclePhoto, 5000);
 
     // ── Load ──────────────────────────────────────────────────────────
     fetch("/questions")

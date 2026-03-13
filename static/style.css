@@ -36,56 +36,67 @@ html, body {
   padding: 0 24px;
 }
 
-/* ── Header / Photo stage ────────────────────────────────────────── */
+/* ── Header / Photo ──────────────────────────────────────────────── */
 header {
   flex-shrink: 0;
   position: relative;
-  height: 220px;
+  height: 260px;
   overflow: hidden;
-  border-radius: 0 0 6px 6px;
-  margin: 0 -24px;          /* bleed to edges */
+  margin: 0 -24px;
+  background: #1a0d06;   /* dark fill for any gaps */
 }
 
-#photo-stage {
+/* Blurred backdrop fills the whole header */
+#photo-blur {
   position: absolute;
-  inset: 0;
+  inset: -30px;           /* overshoot to hide blur edge */
+  background-size: cover;
+  background-position: center;
+  background-image: url('/static/photos/photo1.jpg');
+  filter: blur(22px);
+  transform: scale(1.05);
+  opacity: 1;
+  transition: opacity 0.7s ease;
 }
 
-.photo {
+/* Sharp photo, centered, full height, natural width */
+#photo-img {
   position: absolute;
-  inset: 0;
-  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  opacity: 0;
-  transition: opacity 1.2s ease;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  z-index: 1;
 }
 
-.photo.active { opacity: 1; }
-
-/* gradient scrim so text is always legible */
+/* Gradient scrim for legible text */
 header::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(44, 26, 14, 0.12) 0%,
-    rgba(44, 26, 14, 0.55) 70%,
-    rgba(44, 26, 14, 0.72) 100%
+    transparent 30%,
+    rgba(26, 13, 6, 0.5) 70%,
+    rgba(26, 13, 6, 0.78) 100%
   );
+  z-index: 2;
   pointer-events: none;
 }
 
+/* Title overlay */
 #header-text {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 24px 18px;
+  left: 0; right: 0;
+  padding: 0 28px 16px;
   text-align: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .monogram {
@@ -93,8 +104,8 @@ header::after {
   font-size: 0.65rem;
   font-weight: 900;
   letter-spacing: 0.14em;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 5px;
   line-height: 1;
 }
 
@@ -105,15 +116,15 @@ header h1 {
   line-height: 1;
   letter-spacing: -0.01em;
   color: #fff;
-  text-shadow: 0 1px 8px rgba(44,26,14,0.4);
+  text-shadow: 0 1px 10px rgba(26, 13, 6, 0.5);
 }
 
 header .byline {
-  margin-top: 6px;
-  font-size: 0.72rem;
+  margin-top: 5px;
+  font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.6);
   font-family: var(--font-display);
   font-weight: 900;
 }
@@ -123,61 +134,57 @@ header .byline {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 20px;
-  gap: 16px;
+  padding: 18px 0 18px;
+  gap: 14px;
   overflow: hidden;
 }
 
 /* ── Card ────────────────────────────────────────────────────────── */
 #card {
+  --card-bg:     #FFFCF7;
+  --card-border: #E8DDD0;
+
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: var(--page);
-  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-left: 3px solid var(--gold);
   border-radius: 4px 12px 12px 4px;
-  padding: 28px 32px 24px;
+  padding: 26px 30px 22px;
   overflow-y: auto;
   box-shadow:
     4px 4px 0 -1px var(--ivory),
-    4px 4px 0  0px var(--border),
+    4px 4px 0  0px var(--card-border),
     8px 8px 0 -1px #F0E9DF,
     8px 8px 0  0px #DDD4C6;
-  transition: opacity 0.18s ease, border-color 0.2s, box-shadow 0.2s;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
+  transition: opacity 0.18s ease, border-color 0.2s, background 0.3s;
   outline: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--card-border) transparent;
 }
 
 #card::-webkit-scrollbar       { width: 3px; }
 #card::-webkit-scrollbar-track { background: transparent; }
-#card::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+#card::-webkit-scrollbar-thumb { background: var(--card-border); border-radius: 2px; }
 
 #card.fading { opacity: 0; }
 
-#card.playable {
-  cursor: pointer;
-}
+#card.playable { cursor: pointer; }
 
 #card.playable:hover {
   border-color: var(--gold);
-  box-shadow:
-    4px 4px 0 -1px var(--ivory),
-    4px 4px 0  0px var(--gold),
-    8px 8px 0 -1px #F0E9DF,
-    8px 8px 0  0px #DDD4C6;
 }
 
 /* ── Card label ──────────────────────────────────────────────────── */
 #card-label {
   font-family: var(--font-display);
-  font-size: 0.56rem;
+  font-size: 0.55rem;
   font-weight: 900;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   min-height: 1em;
 }
 
@@ -194,22 +201,22 @@ header .byline {
 /* ── Play hint ───────────────────────────────────────────────────── */
 #card-hint {
   margin-top: auto;
-  padding-top: 20px;
-  font-size: 0.72rem;
+  padding-top: 18px;
+  font-size: 0.68rem;
   color: var(--gold);
-  letter-spacing: 0.08em;
   font-family: var(--font-display);
   font-weight: 900;
-  opacity: 0.7;
+  opacity: 0.55;
   transition: opacity 0.2s;
   flex-shrink: 0;
+  letter-spacing: 0.05em;
 }
 
 #card.playable:hover #card-hint { opacity: 1; }
 
 /* ── Answer section ──────────────────────────────────────────────── */
 #card-answer {
-  margin-top: 20px;
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -219,7 +226,7 @@ header .byline {
 #card-answer.hidden { display: none; }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
@@ -234,12 +241,12 @@ header .byline {
   content: '';
   flex: 1;
   height: 1px;
-  background: var(--border);
+  background: var(--card-border);
 }
 
 .answer-rule span {
   font-family: var(--font-display);
-  font-size: 0.54rem;
+  font-size: 0.53rem;
   font-weight: 900;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -249,7 +256,7 @@ header .byline {
 
 #answer-meta {
   font-family: var(--font-display);
-  font-size: 0.56rem;
+  font-size: 0.55rem;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -268,7 +275,7 @@ header .byline {
 #replay-btn {
   align-self: flex-start;
   background: none;
-  border: 1px solid var(--border);
+  border: 1px solid var(--card-border);
   border-radius: 4px;
   padding: 5px 16px;
   font-family: var(--font-display);
@@ -335,8 +342,8 @@ header .byline {
 
 /* ── Responsive ──────────────────────────────────────────────────── */
 @media (max-width: 540px) {
-  header       { height: 180px; }
-  header h1    { font-size: 1.9rem; }
-  #card        { padding: 22px 20px 18px; }
+  header         { height: 210px; }
+  header h1      { font-size: 1.9rem; }
+  #card          { padding: 20px 18px 16px; }
   #card-question { font-size: 1.25rem; }
 }
