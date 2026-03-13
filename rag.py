@@ -60,6 +60,7 @@ def get_all_questions(popular_order=None) -> list[dict]:
         return {
             "id":          i,
             "question":    p.get("visitor_question", p.get("label", p["question"])),
+            "question_zh": p.get("question_zh", ""),
             "label":       p.get("label", ""),
             "start_fmt":   p["start_fmt"],
             "segments":    [[s["start"], s["end"]] for s in segs],

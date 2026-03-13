@@ -22,6 +22,7 @@
     <div id="content-panel">
       <div id="card" class="playable" role="button" tabindex="0" aria-label="Tap to hear Mama's answer">
         <div id="card-question"></div>
+        <div id="card-question-zh"></div>
         <div id="card-hint">&#9654;</div>
         <div id="card-answer" class="hidden">
           <div class="answer-rule"><span>Mama's answer</span></div>
@@ -61,8 +62,9 @@
     ];
 
     // ── Elements ─────────────────────────────────────────────────────
-    const cardEl     = document.getElementById("card");
-    const questionEl = document.getElementById("card-question");
+    const cardEl       = document.getElementById("card");
+    const questionEl   = document.getElementById("card-question");
+    const questionZhEl = document.getElementById("card-question-zh");
     const hintEl     = document.getElementById("card-hint");
     const answerEl   = document.getElementById("card-answer");
     const answerMeta = document.getElementById("answer-meta");
@@ -124,7 +126,8 @@
       const c = cards[currentIdx];
       const [bg, border, accent] = CARD_COLORS[currentIdx % CARD_COLORS.length];
 
-      questionEl.textContent = c.question;
+      questionEl.textContent   = c.question;
+      questionZhEl.textContent = c.question_zh || "";
       counterEl.textContent  = `${currentIdx + 1} / ${cards.length}`;
       answerEl.classList.add("hidden");
       answerText.textContent = "";

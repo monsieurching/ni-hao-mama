@@ -12,7 +12,8 @@
         "end": 51.82000000000001
       }
     ],
-    "visitor_question": "Can you share a little about yourself to get us started?"
+    "visitor_question": "Can you share a little about yourself to get us started?",
+    "question_zh": "你能分享一些關於你自己的信息來開始嗎？"
   },
   {
     "question": "Why were you born in Shanghai? I thought you were always born in Guangzhou.",
@@ -27,7 +28,8 @@
         "end": 83.86
       }
     ],
-    "visitor_question": "Where were you born?"
+    "visitor_question": "Where were you born?",
+    "question_zh": "你在哪裡出生?"
   },
   {
     "question": "What's the Chinese day?",
@@ -42,7 +44,8 @@
         "end": 123.0
       }
     ],
-    "visitor_question": "When is your birthday?"
+    "visitor_question": "When is your birthday?",
+    "question_zh": "你的生日是什麼時候？"
   },
   {
     "question": "On the Chinese calendar?",
@@ -65,7 +68,8 @@
         "end": 144.68
       }
     ],
-    "visitor_question": "Did your birthday ever cause any confusion?"
+    "visitor_question": "Did your birthday ever cause any confusion?",
+    "question_zh": "你的生日曾經造成過任何困惑嗎？"
   },
   {
     "question": "Jing that is quiet, yeah?",
@@ -80,7 +84,8 @@
         "end": 162.6
       }
     ],
-    "visitor_question": "What does your name mean?"
+    "visitor_question": "What does your name mean?",
+    "question_zh": "你的名字是什麼意思？"
   },
   {
     "question": "Hua Jing Hua?",
@@ -107,7 +112,8 @@
         "end": 184.9
       }
     ],
-    "visitor_question": "What is the meaning behind your full name?"
+    "visitor_question": "What is the meaning behind your full name?",
+    "question_zh": "你的全名背後有什麼含義？"
   },
   {
     "question": "Awu?",
@@ -126,7 +132,8 @@
         "end": 201.76
       }
     ],
-    "visitor_question": "What did your family call you as a child?"
+    "visitor_question": "What did your family call you as a child?",
+    "question_zh": "你小時候你的家人叫你什麼？"
   },
   {
     "question": "What does the ah mean?",
@@ -141,7 +148,8 @@
         "end": 210.78
       }
     ],
-    "visitor_question": "How did your nickname come about?"
+    "visitor_question": "How did your nickname come about?",
+    "question_zh": "你的昵稱是怎麼來的?"
   },
   {
     "question": "That's what Auntie Susan calls you, right?",
@@ -156,7 +164,8 @@
         "end": 220.86
       }
     ],
-    "visitor_question": "Who gave you that nickname?"
+    "visitor_question": "Who gave you that nickname?",
+    "question_zh": "誰給你起的那個綽號？"
   },
   {
     "question": "So is Auntie Susan the only person who calls you that now?",
@@ -171,7 +180,8 @@
         "end": 241.7
       }
     ],
-    "visitor_question": "How did your siblings address you?"
+    "visitor_question": "How did your siblings address you?",
+    "question_zh": "你的兄弟姐妹怎麼稱呼你？"
   },
   {
     "question": "What else do you remember about growing up in Wenzhou?",
@@ -186,7 +196,8 @@
         "end": 258.88
       }
     ],
-    "visitor_question": "Where did you grow up?"
+    "visitor_question": "Where did you grow up?",
+    "question_zh": "你在哪裡長大?"
   },
   {
     "question": "What do you remember about? About?",
@@ -206,7 +217,8 @@
       }
     ],
     "visitor_question": "What do you remember about caring for your younger siblings?",
-    "featured": true
+    "featured": true,
+    "question_zh": "你對照顧年幼的兄弟姐妹有什麼記憶？"
   },
   {
     "question": "Just with the three of them? With the two of them?",
@@ -221,7 +233,8 @@
         "end": 352.32
       }
     ],
-    "visitor_question": "Who looked after you when you were little?"
+    "visitor_question": "Who looked after you when you were little?",
+    "question_zh": "你小的時候誰照顧你？"
   },
   {
     "question": "Wait, where in Hong Kong did you live back then?",
@@ -240,7 +253,8 @@
         "end": 376.32
       }
     ],
-    "visitor_question": "Which neighborhoods did you live in growing up?"
+    "visitor_question": "Which neighborhoods did you live in growing up?",
+    "question_zh": "你在成長期間住過哪些社區？"
   },
   {
     "question": "Where is Wong Po Gai?",
@@ -260,7 +274,8 @@
       }
     ],
     "visitor_question": "What were your homes like growing up?",
-    "featured": true
+    "featured": true,
+    "question_zh": "你們小時候的家是什麼樣子的？"
   },
   {
     "question": "How many of you?",
@@ -275,7 +290,8 @@
         "end": 434.32
       }
     ],
-    "visitor_question": "How many people lived together in your home?"
+    "visitor_question": "How many people lived together in your home?",
+    "question_zh": "你家裡一起住著多少人?"
   },
   {
     "question": "For how long?",
@@ -290,7 +306,8 @@
         "end": 452.32
       }
     ],
-    "visitor_question": "What was it like sharing one toilet with so many people?"
+    "visitor_question": "What was it like sharing one toilet with so many people?",
+    "question_zh": "和那麼多人共用一個廁所是什麼樣的感受？"
   },
   {
     "question": "So you just peed in the kitchen?",
@@ -305,7 +322,8 @@
         "end": 471.32
       }
     ],
-    "visitor_question": "Did the whole family share one room?"
+    "visitor_question": "Did the whole family share one room?",
+    "question_zh": "整個家族共用一個房間嗎?"
   },
   {
     "question": "What did you, did you know what you wanted to be when you grew up back then? Or did you even think about that?",
@@ -320,7 +338,8 @@
         "end": 491.6
       }
     ],
-    "visitor_question": "What did you dream of becoming when you grew up?"
+    "visitor_question": "What did you dream of becoming when you grew up?",
+    "question_zh": "你長大後夢想成為什麼？"
   },
   {
     "question": "Interesting. Were you close, I guess you were close to your brothers and sisters?",
@@ -336,7 +355,8 @@
       }
     ],
     "visitor_question": "Were you a responsible older sister?",
-    "featured": true
+    "featured": true,
+    "question_zh": "你是一個盡責的姐姐嗎？"
   },
   {
     "question": "And then where was your, you said your mom was the one who took care of you? My mom was sick the whole time?",
@@ -355,7 +375,8 @@
         "end": 587.38
       }
     ],
-    "visitor_question": "Did your mom have time to spend with you kids?"
+    "visitor_question": "Did your mom have time to spend with you kids?",
+    "question_zh": "你媽媽有時間和你們孩子在一起嗎?"
   },
   {
     "question": "He said he was a chef? Was he a chef?",
@@ -370,7 +391,8 @@
         "end": 591.38
       }
     ],
-    "visitor_question": "What did your father do for work?"
+    "visitor_question": "What did your father do for work?",
+    "question_zh": "你的父親做什麼工作？"
   },
   {
     "question": "Chief steward on what kind of boat?",
@@ -390,7 +412,8 @@
       }
     ],
     "visitor_question": "What kind of ship did your father work on?",
-    "featured": true
+    "featured": true,
+    "question_zh": "你父親在什麼樣的船上工作？"
   },
   {
     "question": "And it was the club house of the first ship?",
@@ -409,7 +432,8 @@
         "end": 634.38
       }
     ],
-    "visitor_question": "Was it a big ship?"
+    "visitor_question": "Was it a big ship?",
+    "question_zh": "那是一艘大船嗎?"
   },
   {
     "question": "So it was a cruise, cruise boat?",
@@ -424,7 +448,8 @@
         "end": 644.38
       }
     ],
-    "visitor_question": "Was it a passenger or cargo ship?"
+    "visitor_question": "Was it a passenger or cargo ship?",
+    "question_zh": "那是客船還是貨船？"
   },
   {
     "question": "Oh, so you took care of them to go to school while you didn't go to school?",
@@ -439,7 +464,8 @@
         "end": 712.38
       }
     ],
-    "visitor_question": "Why didn't you finish school earlier?"
+    "visitor_question": "Why didn't you finish school earlier?",
+    "question_zh": "你為什麼沒有更早完成學業？"
   },
   {
     "question": "What did you learn in school?",
@@ -454,7 +480,8 @@
         "end": 736.38
       }
     ],
-    "visitor_question": "What do you remember about your early schooling?"
+    "visitor_question": "What do you remember about your early schooling?",
+    "question_zh": "你還記得關於你早年的學校教育的什麼?"
   },
   {
     "question": "And I remember one of the school that I go, it's just like a flat, you know, a flat, yeah?",
@@ -469,7 +496,8 @@
         "end": 765.38
       }
     ],
-    "visitor_question": "What was your school building like?"
+    "visitor_question": "What was your school building like?",
+    "question_zh": "你的學校建築物是什麼樣子的？"
   },
   {
     "question": "And what did you, what was your favorite thing to learn?",
@@ -484,7 +512,8 @@
         "end": 807.38
       }
     ],
-    "visitor_question": "What was the bigger school you attended like?"
+    "visitor_question": "What was the bigger school you attended like?",
+    "question_zh": "你就讀的那所較大的學校是什麼樣子的?"
   },
   {
     "question": "Why?",
@@ -499,7 +528,8 @@
         "end": 818.38
       }
     ],
-    "visitor_question": "Why did your mother pull you from that school?"
+    "visitor_question": "Why did your mother pull you from that school?",
+    "question_zh": "你媽媽為什麼把你從那所學校拉出來？"
   },
   {
     "question": "That was your high school too?",
@@ -514,7 +544,8 @@
         "end": 833.38
       }
     ],
-    "visitor_question": "Did you finish at that school?"
+    "visitor_question": "Did you finish at that school?",
+    "question_zh": "你在那所學校畢業了嗎？"
   },
   {
     "question": "What did you, what did you fail?",
@@ -529,7 +560,8 @@
         "end": 849.38
       }
     ],
-    "visitor_question": "Did you have enough credits to graduate?"
+    "visitor_question": "Did you have enough credits to graduate?",
+    "question_zh": "你有足够的学分毕业吗？"
   },
   {
     "question": "What did you fail?",
@@ -548,7 +580,8 @@
         "end": 872.38
       }
     ],
-    "visitor_question": "What was your strongest subject?"
+    "visitor_question": "What was your strongest subject?",
+    "question_zh": "你最擅長的科目是什麼？"
   },
   {
     "question": "What did you work?",
@@ -563,7 +596,8 @@
         "end": 900.38
       }
     ],
-    "visitor_question": "What was your very first job?"
+    "visitor_question": "What was your very first job?",
+    "question_zh": "你的第一份工作是什麼？"
   },
   {
     "question": "How did, what did you do for them?",
@@ -578,7 +612,8 @@
         "end": 910.38
       }
     ],
-    "visitor_question": "What was your role at your first job?"
+    "visitor_question": "What was your role at your first job?",
+    "question_zh": "你在你的第一份工作中扮演什麼角色?"
   },
   {
     "question": "His family has lots of things, yeah?",
@@ -593,7 +628,8 @@
         "end": 966.72
       }
     ],
-    "visitor_question": "Did you meet anyone interesting at that job?"
+    "visitor_question": "Did you meet anyone interesting at that job?",
+    "question_zh": "你在那份工作中遇到過任何有趣的人嗎?"
   },
   {
     "question": "You worked at a garment factory?",
@@ -608,7 +644,8 @@
         "end": 1019.72
       }
     ],
-    "visitor_question": "What other jobs did you have after that?"
+    "visitor_question": "What other jobs did you have after that?",
+    "question_zh": "在那之後你還做過哪些其他的工作？"
   },
   {
     "question": "How come you have so many days off?",
@@ -623,7 +660,8 @@
         "end": 1026.72
       }
     ],
-    "visitor_question": "Why did you move between so many jobs?"
+    "visitor_question": "Why did you move between so many jobs?",
+    "question_zh": "你為什麼在這麼多份工作之間轉換？"
   },
   {
     "question": "Was it hot in the factory? Was it nice in the factory?",
@@ -638,7 +676,8 @@
         "end": 1048.72
       }
     ],
-    "visitor_question": "How was working life treating you?"
+    "visitor_question": "How was working life treating you?",
+    "question_zh": "工作生活對你怎麼樣？"
   },
   {
     "question": "Do you know if they still exist, Holsten?",
@@ -653,7 +692,8 @@
         "end": 1131.72
       }
     ],
-    "visitor_question": "Which company did you work for after the garment factory?"
+    "visitor_question": "Which company did you work for after the garment factory?",
+    "question_zh": "你在服装厂之後為哪家公司工作？"
   },
   {
     "question": "So you just, do you have a lot of pictures of?",
@@ -668,7 +708,8 @@
         "end": 1153.72
       }
     ],
-    "visitor_question": "Do you have any photos from your working days?"
+    "visitor_question": "Do you have any photos from your working days?",
+    "question_zh": "你有沒有你工作時期的照片？"
   },
   {
     "question": "In what?",
@@ -683,7 +724,8 @@
         "end": 1190.72
       }
     ],
-    "visitor_question": "What did you tutor students in?"
+    "visitor_question": "What did you tutor students in?",
+    "question_zh": "你教導學生什麼科目?"
   },
   {
     "question": "When you were working, were you still living with your family?",
@@ -698,7 +740,8 @@
         "end": 1225.5800000000002
       }
     ],
-    "visitor_question": "Did you keep any of the money you earned?"
+    "visitor_question": "Did you keep any of the money you earned?",
+    "question_zh": "你保留了你賺的任何錢嗎?"
   },
   {
     "question": "So do you still know how to sew?",
@@ -713,7 +756,8 @@
         "end": 1266.8600000000001
       }
     ],
-    "visitor_question": "What did you do for fun in your spare time?"
+    "visitor_question": "What did you do for fun in your spare time?",
+    "question_zh": "你在空闲时间做什麼来娱乐？"
   },
   {
     "question": "So all of you guys are still living together in the one room?",
@@ -732,7 +776,8 @@
         "end": 1335.3
       }
     ],
-    "visitor_question": "What were your living arrangements like later on?"
+    "visitor_question": "What were your living arrangements like later on?",
+    "question_zh": "你後來的生活安排是什麼樣的？"
   },
   {
     "question": "So you had a bunk bed?",
@@ -747,7 +792,8 @@
         "end": 1356.3
       }
     ],
-    "visitor_question": "What was it like sharing a bed with your siblings?"
+    "visitor_question": "What was it like sharing a bed with your siblings?",
+    "question_zh": "與你的兄弟姐妹共享一張床是什麼樣的體驗？"
   },
   {
     "question": "So when did you end up moving out?",
@@ -762,7 +808,8 @@
         "end": 1381.3
       }
     ],
-    "visitor_question": "When did your family buy their own home?"
+    "visitor_question": "When did your family buy their own home?",
+    "question_zh": "你的家人什麼時候買了自己的房子?"
   },
   {
     "question": "Huh?",
@@ -777,7 +824,8 @@
         "end": 1410.3
       }
     ],
-    "visitor_question": "How long did your family live in Hongham?"
+    "visitor_question": "How long did your family live in Hongham?",
+    "question_zh": "你的家人在宏咸住了多長時間?"
   },
   {
     "question": "You sold your apartment in Hongham?",
@@ -792,7 +840,8 @@
         "end": 1422.3
       }
     ],
-    "visitor_question": "How much did you sell the Hongham home for?"
+    "visitor_question": "How much did you sell the Hongham home for?",
+    "question_zh": "你以多少錢售出洪漢家居？"
   },
   {
     "question": "If we go back a little bit, did you have a lot of boyfriends?",
@@ -811,7 +860,8 @@
         "end": 1442.3
       }
     ],
-    "visitor_question": "Did you date much when you were young?"
+    "visitor_question": "Did you date much when you were young?",
+    "question_zh": "你年輕的時候經常約會嗎？"
   },
   {
     "question": "Is he an old taxi driver or a young taxi driver?",
@@ -826,7 +876,8 @@
         "end": 1449.86
       }
     ],
-    "visitor_question": "How did you first meet Daddy?"
+    "visitor_question": "How did you first meet Daddy?",
+    "question_zh": "你第一次是怎麼認識爸爸的？"
   },
   {
     "question": "Was he the one who brought cake? Or was there somebody else?",
@@ -841,7 +892,8 @@
         "end": 1456.22
       }
     ],
-    "visitor_question": "Was that the same person who introduced you?"
+    "visitor_question": "Was that the same person who introduced you?",
+    "question_zh": "那是介紹你的同一個人嗎?"
   },
   {
     "question": "Really?",
@@ -856,7 +908,8 @@
         "end": 1471.96
       }
     ],
-    "visitor_question": "Did you see him much after you first met?"
+    "visitor_question": "Did you see him much after you first met?",
+    "question_zh": "你們初次見面後，經常見面嗎？"
   },
   {
     "question": "He didn't show up?",
@@ -871,7 +924,8 @@
         "end": 1474.72
       }
     ],
-    "visitor_question": "Did he come to your gatherings?"
+    "visitor_question": "Did he come to your gatherings?",
+    "question_zh": "他有沒有來你的聚會?"
   },
   {
     "question": "A cousin of yours?",
@@ -886,7 +940,8 @@
         "end": 1496.3
       }
     ],
-    "visitor_question": "How did he find your family again?"
+    "visitor_question": "How did he find your family again?",
+    "question_zh": "他怎麼又找到你的家人了？"
   },
   {
     "question": "He was in school at that point, or was he already beyond school?",
@@ -909,7 +964,8 @@
         "end": 1554.0
       }
     ],
-    "visitor_question": "What was Daddy doing when you got together?"
+    "visitor_question": "What was Daddy doing when you got together?",
+    "question_zh": "你和爸爸在一起時，他在做什麼？"
   },
   {
     "question": "That's still there, right?",
@@ -924,7 +980,8 @@
         "end": 1590.78
       }
     ],
-    "visitor_question": "Where did you get married?"
+    "visitor_question": "Where did you get married?",
+    "question_zh": "你在哪裡結婚的？"
   },
   {
     "question": "But we married in the government, you know?",
@@ -947,7 +1004,8 @@
         "end": 1622.1000000000001
       }
     ],
-    "visitor_question": "Where were you living when you first got married?"
+    "visitor_question": "Where were you living when you first got married?",
+    "question_zh": "你首次結婚時住在哪裡?"
   },
   {
     "question": "And then is that when you moved? To Hawaii?",
@@ -967,7 +1025,8 @@
       }
     ],
     "visitor_question": "Were you nervous being pregnant without Daddy nearby?",
-    "featured": true
+    "featured": true,
+    "question_zh": "在爸爸不在身邊的情況下懷孕，你緊張嗎？"
   },
   {
     "question": "Were you nervous?",
@@ -982,7 +1041,8 @@
         "end": 1695.8600000000001
       }
     ],
-    "visitor_question": "What was it like when Marlene was born?"
+    "visitor_question": "What was it like when Marlene was born?",
+    "question_zh": "當瑪琳出生時，情況如何？"
   },
   {
     "question": "Was that a hard pregnancy, Marlene?",
@@ -1001,7 +1061,8 @@
         "end": 1732.92
       }
     ],
-    "visitor_question": "What was Marlene like as a baby?"
+    "visitor_question": "What was Marlene like as a baby?",
+    "question_zh": "瑪琳娜小時候是什麼樣子？"
   },
   {
     "question": "For the first 13 months?",
@@ -1016,7 +1077,8 @@
         "end": 1746.92
       }
     ],
-    "visitor_question": "What was Marlene like as a toddler?"
+    "visitor_question": "What was Marlene like as a toddler?",
+    "question_zh": "瑪琳小時候是什麼樣子？"
   },
   {
     "question": "She was already pottering by one year old?",
@@ -1031,7 +1093,8 @@
         "end": 1777.02
       }
     ],
-    "visitor_question": "Do you have any funny memories of potty training Marlene?"
+    "visitor_question": "Do you have any funny memories of potty training Marlene?",
+    "question_zh": "你有任何關於教馬琳如廁的有趣回憶嗎？"
   },
   {
     "question": "Interesting. Interesting. How did you do that? Because I know Michael's having challenges,",
@@ -1046,7 +1109,8 @@
         "end": 1807.48
       }
     ],
-    "visitor_question": "Why did your family move to New York?"
+    "visitor_question": "Why did your family move to New York?",
+    "question_zh": "你的家人為什麼搬到紐約？"
   },
   {
     "question": "How come you didn't, did you think about moving to New York back then?",
@@ -1061,7 +1125,8 @@
         "end": 1828.1200000000001
       }
     ],
-    "visitor_question": "How did your sister Tina end up in America?"
+    "visitor_question": "How did your sister Tina end up in America?",
+    "question_zh": "你的妹妹蒂娜是怎麼最後來到美國的?"
   },
   {
     "question": "In New York?",
@@ -1077,7 +1142,8 @@
       }
     ],
     "visitor_question": "What happened to Uncle Frank when the family moved?",
-    "featured": true
+    "featured": true,
+    "question_zh": "當家人搬家時，法蘭克叔叔發生了什麼事？"
   },
   {
     "question": "Twenty?",
@@ -1097,7 +1163,8 @@
       }
     ],
     "visitor_question": "When did Daddy first come to America?",
-    "featured": true
+    "featured": true,
+    "question_zh": "爸爸第一次什麼時候來美國？"
   },
   {
     "question": "Interesting. So when did your, your dad pass away?",
@@ -1116,7 +1183,8 @@
         "end": 1982.86
       }
     ],
-    "visitor_question": "How did Daddy pass away?"
+    "visitor_question": "How did Daddy pass away?",
+    "question_zh": "爸爸是怎麼去世的？"
   },
   {
     "question": "He had a heart attack?",
@@ -1131,7 +1199,8 @@
         "end": 2015.08
       }
     ],
-    "visitor_question": "What happened to Daddy's health?"
+    "visitor_question": "What happened to Daddy's health?",
+    "question_zh": "爸爸的健康狀況怎麼了?"
   },
   {
     "question": "He didn't make it to your wedding then?",
@@ -1146,7 +1215,8 @@
         "end": 2061.6400000000003
       }
     ],
-    "visitor_question": "Tell us about Daddy's early life."
+    "visitor_question": "Tell us about Daddy's early life.",
+    "question_zh": "請告訴我們爸爸的早年生活。"
   },
   {
     "question": "Where did he grow up?",
@@ -1161,7 +1231,8 @@
         "end": 2122.4399999999996
       }
     ],
-    "visitor_question": "What do you remember about Daddy's work life?"
+    "visitor_question": "What do you remember about Daddy's work life?",
+    "question_zh": "你對爸爸的工作生活還記得什麼？"
   },
   {
     "question": "Yeah. So what did he do when his parents passed away?",
@@ -1177,7 +1248,8 @@
       }
     ],
     "visitor_question": "What did your parents teach you about life?",
-    "featured": true
+    "featured": true,
+    "question_zh": "你的父母教過你關於人生的什麼？"
   },
   {
     "question": "I don't know. I know that she has a sister, you know? Yeah. And then she has a brother.",
@@ -1196,7 +1268,8 @@
         "end": 2276.08
       }
     ],
-    "visitor_question": "What life skills did your parents pass on to you?"
+    "visitor_question": "What life skills did your parents pass on to you?",
+    "question_zh": "你的父母传给你了什么生活技能？"
   },
   {
     "question": "What did you learn from your parents? What are the things you remember learning from them?",
@@ -1215,7 +1288,8 @@
         "end": 2358.08
       }
     ],
-    "visitor_question": "Did your parents take you to the dentist?"
+    "visitor_question": "Did your parents take you to the dentist?",
+    "question_zh": "你的父母有沒有帶你去看牙醫?"
   },
   {
     "question": "Did they give you any medicine?",
@@ -1230,7 +1304,8 @@
         "end": 2394.08
       }
     ],
-    "visitor_question": "What is a funny memory from your Hongham days?"
+    "visitor_question": "What is a funny memory from your Hongham days?",
+    "question_zh": "你在洪漢時期有什麼有趣的回憶嗎？"
   },
   {
     "question": "You didn't have your own bathroom?",
@@ -1246,7 +1321,8 @@
       }
     ],
     "visitor_question": "What was life like without modern technology?",
-    "featured": true
+    "featured": true,
+    "question_zh": "沒有現代科技的生活是什麼樣的？"
   },
   {
     "question": "So how did you learn how to do everything if there was no internet back then?",
@@ -1261,7 +1337,8 @@
         "end": 2463.08
       }
     ],
-    "visitor_question": "How did you sneak into the movies as kids?"
+    "visitor_question": "How did you sneak into the movies as kids?",
+    "question_zh": "你們小時候是怎樣偷偷溜進電影院的?"
   },
   {
     "question": "No phones?",
@@ -1276,7 +1353,8 @@
         "end": 2486.08
       }
     ],
-    "visitor_question": "How did you watch TV before you had one?"
+    "visitor_question": "How did you watch TV before you had one?",
+    "question_zh": "你還沒有電視機之前，你是怎樣看電視的？"
   },
   {
     "question": "Do you remember any of them?",
@@ -1291,7 +1369,8 @@
         "end": 2544.08
       }
     ],
-    "visitor_question": "How did you find your way around the city as a child?"
+    "visitor_question": "How did you find your way around the city as a child?",
+    "question_zh": "你小時候是怎樣在城市裡認路的？"
   },
   {
     "question": "Was it safe to do that when you were young?",
@@ -1311,7 +1390,8 @@
       }
     ],
     "visitor_question": "How would you describe your mother?",
-    "featured": true
+    "featured": true,
+    "question_zh": "你會如何描述你的母親？"
   },
   {
     "question": "Are they grateful for you taking care of them when you were young?",
@@ -1329,6 +1409,7 @@
         "start": 2599.08,
         "end": 2605.08
       }
-    ]
+    ],
+    "question_zh": "兄弟姐妹是否感谢她的照顾"
   }
 ]

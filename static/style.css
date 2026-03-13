@@ -183,6 +183,17 @@ html, body {
   color: var(--ink);
 }
 
+#card-question-zh {
+  margin-top: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--card-accent);
+  opacity: 0.75;
+  font-style: italic;
+}
+
 /* ── Play hint ───────────────────────────────────────────────────── */
 #card-hint {
   margin-top: 16px;
