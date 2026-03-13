@@ -52,13 +52,13 @@
       "/static/photos/photo5.jpg",
     ];
 
-    // Card background palettes [bg, border-color]
+    // Card palettes [bg, border, accent (left edge)]
     const CARD_COLORS = [
-      ["#FFFCF7", "#E8DDD0"],   // warm ivory
-      ["#FDF3F0", "#EDD8D2"],   // soft rose
-      ["#F4F6F0", "#D8DECC"],   // pale sage
-      ["#FEF8ED", "#E8D9A8"],   // warm gold
-      ["#F6F2F7", "#DCCFE0"],   // dusty lavender
+      ["#FFFCF7", "#E8DDD0", "#C9962A"],  // ivory    / gold
+      ["#FDF3F0", "#EDD8D2", "#B85450"],  // rose     / terracotta
+      ["#F4F6F0", "#D8DECC", "#6B8A6B"],  // sage     / green
+      ["#FEF8ED", "#E8D9A8", "#A07418"],  // gold     / amber
+      ["#F6F2F7", "#DCCFE0", "#8B6B8E"],  // lavender / mauve
     ];
 
     // ── Elements ─────────────────────────────────────────────────────
@@ -82,6 +82,28 @@
     let photoIdx    = 0;
     let audioPrimed = false;
 
+    // ── Swipe ─────────────────────────────────────────────────────────
+    let touchStartX = 0;
+    let didSwipe    = false;
+
+    document.addEventListener("touchstart", e => {
+      touchStartX = e.touches[0].clientX;
+      didSwipe    = false;
+    }, { passive: true });
+
+    document.addEventListener("touchmove", e => {
+      if (Math.abs(e.touches[0].clientX - touchStartX) > 12) didSwipe = true;
+    }, { passive: true });
+
+    document.addEventListener("touchend", e => {
+      if (!didSwipe) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 48) {
+        if (dx < 0) nextBtn.click();
+        else        prevBtn.click();
+      }
+    }, { passive: true });
+
     // ── Audio ─────────────────────────────────────────────────────────
     function primeAudio() {
       if (audioPrimed) return;
@@ -102,7 +124,7 @@
     // ── Card rendering ────────────────────────────────────────────────
     function renderCard() {
       const c = cards[currentIdx];
-      const [bg, border] = CARD_COLORS[currentIdx % CARD_COLORS.length];
+      const [bg, border, accent] = CARD_COLORS[currentIdx % CARD_COLORS.length];
 
       labelEl.textContent    = c.label || "";
       questionEl.textContent = c.question;
@@ -115,6 +137,7 @@
 
       cardEl.style.setProperty("--card-bg",     bg);
       cardEl.style.setProperty("--card-border", border);
+      cardEl.style.setProperty("--card-accent", accent);
 
       prevBtn.disabled = currentIdx === 0;
       nextBtn.disabled = currentIdx === cards.length - 1;
@@ -146,6 +169,7 @@
 
     // ── Card click ────────────────────────────────────────────────────
     cardEl.addEventListener("click", () => {
+      if (didSwipe) return;
       if (!cardEl.classList.contains("playable")) return;
       primeAudio();
       playClip(cards[currentIdx].custom_segments || cards[currentIdx].segments);
